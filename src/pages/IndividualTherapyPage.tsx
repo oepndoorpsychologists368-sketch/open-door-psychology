@@ -9,7 +9,7 @@ export function IndividualTherapyPage() {
     <ServiceDetailLayout
       service={service}
       customIntro={
-        <div className="rounded-2xl bg-[#C7D4C1]/20 border border-[#163C3B]/10 p-6 text-xs sm:text-sm text-[#163C3B] leading-relaxed">
+        <div className="rounded-2xl bg-[#FBE3EC]/20 border border-[#0B0A0D]/10 p-6 text-xs sm:text-sm text-[#0B0A0D] leading-relaxed">
           <strong>A Note on Starting:</strong> Many people assume individual psychotherapy requires a catastrophic crisis. In reality, our clients often arrive during quiet crossroads—wondering why success feels hollow, wrestling with an unspoken grief, or wanting to understand why certain relational boundaries feel so hard to maintain.
         </div>
       }

@@ -64,7 +64,7 @@ export function BreathingModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="absolute inset-0 bg-[#163C3B]/60 backdrop-blur-md"
+          className="absolute inset-0 bg-[#0B0A0D]/60 backdrop-blur-md"
         />
 
         {/* Modal Window */}
@@ -73,7 +73,7 @@ export function BreathingModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.94, opacity: 0, y: 15 }}
           transition={{ type: 'spring', damping: 25, stiffness: 320 }}
-          className="relative w-full max-w-lg rounded-3xl bg-[#F8F5EF] border border-[#163C3B]/15 p-8 sm:p-12 text-center shadow-2xl space-y-8 z-10"
+          className="relative w-full max-w-lg rounded-3xl bg-[#FFF9FC] border border-[#0B0A0D]/15 p-8 sm:p-12 text-center shadow-2xl space-y-8 z-10"
         >
           {/* Header Controls */}
           <div className="flex items-center justify-between">
@@ -82,12 +82,12 @@ export function BreathingModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
               onClick={toggleAudio}
               className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium transition-colors cursor-pointer ${
                 isAudioEnabled
-                  ? 'bg-[#163C3B] text-[#F8F5EF] font-semibold shadow-xs'
-                  : 'bg-white text-[#252927] hover:text-[#163C3B] border border-[#163C3B]/10'
+                  ? 'bg-[#0B0A0D] text-[#FFF9FC] font-semibold shadow-xs'
+                  : 'bg-white text-[#252927] hover:text-[#0B0A0D] border border-[#0B0A0D]/10'
               }`}
             >
               {isAudioEnabled ? (
-                <Volume2 className="w-3.5 h-3.5 text-[#D8A69C]" />
+                <Volume2 className="w-3.5 h-3.5 text-[#EFA0BF]" />
               ) : (
                 <VolumeX className="w-3.5 h-3.5 text-neutral-400" />
               )}
@@ -97,7 +97,7 @@ export function BreathingModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
             <button
               type="button"
               onClick={onClose}
-              className="p-2 rounded-full text-neutral-500 hover:text-[#163C3B] hover:bg-[#163C3B]/10 transition-colors cursor-pointer"
+              className="p-2 rounded-full text-neutral-500 hover:text-[#0B0A0D] hover:bg-[#0B0A0D]/10 transition-colors cursor-pointer"
               aria-label="Close breathing session"
             >
               <X className="w-5 h-5" />
@@ -116,7 +116,7 @@ export function BreathingModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
                 duration: phase === 'Inhale' ? 4 : phase === 'Hold' ? 0.5 : 8,
                 ease: 'easeInOut',
               }}
-              className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#C7D4C1]/50 via-[#D8A69C]/40 to-[#D9D1E7]/50 blur-2xl"
+              className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#FBE3EC]/50 via-[#EFA0BF]/40 to-[#D9D1E7]/50 blur-2xl"
             />
 
             {/* Inner defined circle */}
@@ -128,12 +128,12 @@ export function BreathingModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
                 duration: phase === 'Inhale' ? 4 : phase === 'Hold' ? 0.5 : 8,
                 ease: 'easeInOut',
               }}
-              className="relative w-40 h-40 rounded-full bg-white text-[#163C3B] flex flex-col items-center justify-center shadow-lg border border-[#163C3B]/15"
+              className="relative w-40 h-40 rounded-full bg-white text-[#0B0A0D] flex flex-col items-center justify-center shadow-lg border border-[#0B0A0D]/15"
             >
-              <span className="font-serif text-2xl font-bold tracking-tight text-[#163C3B]">
+              <span className="font-serif text-2xl font-bold tracking-tight text-[#0B0A0D]">
                 {phase}
               </span>
-              <span className="font-mono text-3xl font-light text-[#D8A69C] mt-1">
+              <span className="font-mono text-3xl font-light text-[#EFA0BF] mt-1">
                 {secondsRemaining}s
               </span>
             </motion.div>
@@ -141,7 +141,7 @@ export function BreathingModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
 
           {/* Somatic Guidance Text */}
           <div className="space-y-2">
-            <h3 className="font-serif text-xl font-bold text-[#163C3B]">
+            <h3 className="font-serif text-xl font-bold text-[#0B0A0D]">
               {phase === 'Inhale' && 'Slowly fill your lungs and soften your chest.'}
               {phase === 'Hold' && 'Rest quietly in fullness. Nothing to rush or prove.'}
               {phase === 'Exhale' && 'Release slowly through your lips. Let tension melt away.'}
@@ -155,7 +155,7 @@ export function BreathingModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
           <button
             type="button"
             onClick={onClose}
-            className="px-6 py-2.5 rounded-full text-xs font-bold bg-[#163C3B] text-[#F8F5EF] hover:bg-[#1D4E4D] transition-colors cursor-pointer shadow-xs"
+            className="px-6 py-2.5 rounded-full text-xs font-bold bg-[#0B0A0D] text-[#FFF9FC] hover:bg-[#151218] transition-colors cursor-pointer shadow-xs"
           >
             I Feel Grounded · Return to Practice
           </button>

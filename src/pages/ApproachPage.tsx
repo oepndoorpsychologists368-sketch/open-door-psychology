@@ -34,13 +34,13 @@ export function ApproachPage() {
 
       {/* Header */}
       <div className="max-w-3xl space-y-4">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
           Clinical Philosophy
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#163C3B] text-balance">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B0A0D] text-balance">
           Therapy as Collaboration, Not Correction
         </h1>
-        <p className="font-serif text-xl italic text-[#D8A69C]">
+        <p className="font-serif text-xl italic text-[#EFA0BF]">
           “We don’t believe individuals are broken machines needing assembly-line repair.”
         </p>
         <p className="text-base text-neutral-600 leading-relaxed">
@@ -49,12 +49,12 @@ export function ApproachPage() {
       </div>
 
       {/* Split Image Feature */}
-      <div className="rounded-3xl bg-[#FFFFFF] border border-[#163C3B]/10 overflow-hidden shadow-xs grid grid-cols-1 lg:grid-cols-12 items-center">
+      <div className="rounded-3xl bg-[#FFFFFF] border border-[#0B0A0D]/10 overflow-hidden shadow-xs grid grid-cols-1 lg:grid-cols-12 items-center">
         <div className="lg:col-span-6 p-8 sm:p-12 space-y-4">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
             The Consulting Alliance
           </span>
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#163C3B]">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B0A0D]">
             Why the Therapeutic Relationship Matters Most
           </h2>
           <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -66,7 +66,7 @@ export function ApproachPage() {
           <div className="pt-2">
             <Link
               to="/appointment"
-              className="inline-flex items-center gap-2 text-xs font-semibold text-[#163C3B] hover:underline"
+              className="inline-flex items-center gap-2 text-xs font-semibold text-[#0B0A0D] hover:underline"
             >
               <span>Begin with an intake consultation</span>
               <ArrowRight className="w-4 h-4" />
@@ -86,10 +86,10 @@ export function ApproachPage() {
       {/* 4 Pillars of Our Approach */}
       <div className="space-y-8">
         <div className="text-center max-w-xl mx-auto space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
             How We Work In Practice
           </span>
-          <h2 className="font-serif text-3xl font-bold text-[#163C3B]">
+          <h2 className="font-serif text-3xl font-bold text-[#0B0A0D]">
             Four Core Tenets of Our Care
           </h2>
         </div>
@@ -98,12 +98,12 @@ export function ApproachPage() {
           {approaches.map((app, index) => (
             <div
               key={index}
-              className="rounded-2xl bg-[#FFFFFF] border border-[#163C3B]/10 p-7 space-y-3"
+              className="rounded-2xl bg-[#FFFFFF] border border-[#0B0A0D]/10 p-7 space-y-3"
             >
-              <div className="text-xs font-mono font-bold text-[#D8A69C]">
+              <div className="text-xs font-mono font-bold text-[#EFA0BF]">
                 0{index + 1}.
               </div>
-              <h3 className="font-serif text-xl font-bold text-[#163C3B]">
+              <h3 className="font-serif text-xl font-bold text-[#0B0A0D]">
                 {app.title}
               </h3>
               <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -115,8 +115,8 @@ export function ApproachPage() {
       </div>
 
       {/* Integrative Modalities Table */}
-      <div className="rounded-3xl bg-[#F8F5EF] border border-[#163C3B]/10 p-8 sm:p-10 space-y-6">
-        <h3 className="font-serif text-2xl font-bold text-[#163C3B]">
+      <div className="rounded-3xl bg-[#FFF9FC] border border-[#0B0A0D]/10 p-8 sm:p-10 space-y-6">
+        <h3 className="font-serif text-2xl font-bold text-[#0B0A0D]">
           Evidence-Based Modalities We Draw Upon
         </h3>
         <p className="text-xs sm:text-sm text-neutral-600 max-w-2xl">
@@ -124,40 +124,40 @@ export function ApproachPage() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
-          <div className="p-4 rounded-xl bg-white border border-[#163C3B]/5 space-y-1.5">
-            <h4 className="font-semibold text-xs text-[#163C3B]">Psychodynamic Insight</h4>
+          <div className="p-4 rounded-xl bg-white border border-[#0B0A0D]/5 space-y-1.5">
+            <h4 className="font-semibold text-xs text-[#0B0A0D]">Psychodynamic Insight</h4>
             <p className="text-xs text-neutral-500">Unearthing early relational habits, unconscious patterns, and recurring emotional scripts.</p>
           </div>
-          <div className="p-4 rounded-xl bg-white border border-[#163C3B]/5 space-y-1.5">
-            <h4 className="font-semibold text-xs text-[#163C3B]">Acceptance &amp; Commitment (ACT)</h4>
+          <div className="p-4 rounded-xl bg-white border border-[#0B0A0D]/5 space-y-1.5">
+            <h4 className="font-semibold text-xs text-[#0B0A0D]">Acceptance &amp; Commitment (ACT)</h4>
             <p className="text-xs text-neutral-500">Defusing anxious rumination and anchoring daily behavior to what you truly value.</p>
           </div>
-          <div className="p-4 rounded-xl bg-white border border-[#163C3B]/5 space-y-1.5">
-            <h4 className="font-semibold text-xs text-[#163C3B]">Somatic &amp; Nervous System Reg</h4>
+          <div className="p-4 rounded-xl bg-white border border-[#0B0A0D]/5 space-y-1.5">
+            <h4 className="font-semibold text-xs text-[#0B0A0D]">Somatic &amp; Nervous System Reg</h4>
             <p className="text-xs text-neutral-500">Listening to the physiological body, down-regulating flight responses through grounding.</p>
           </div>
-          <div className="p-4 rounded-xl bg-white border border-[#163C3B]/5 space-y-1.5">
-            <h4 className="font-semibold text-xs text-[#163C3B]">Emotion-Focused Couples (EFT)</h4>
+          <div className="p-4 rounded-xl bg-white border border-[#0B0A0D]/5 space-y-1.5">
+            <h4 className="font-semibold text-xs text-[#0B0A0D]">Emotion-Focused Couples (EFT)</h4>
             <p className="text-xs text-neutral-500">De-escalating cycles of conflict and building durable attachment security between partners.</p>
           </div>
-          <div className="p-4 rounded-xl bg-white border border-[#163C3B]/5 space-y-1.5">
-            <h4 className="font-semibold text-xs text-[#163C3B]">Dialectical Skills (DBT)</h4>
+          <div className="p-4 rounded-xl bg-white border border-[#0B0A0D]/5 space-y-1.5">
+            <h4 className="font-semibold text-xs text-[#0B0A0D]">Dialectical Skills (DBT)</h4>
             <p className="text-xs text-neutral-500">Practical distress tolerance, emotional regulation, and assertive interpersonal boundary skills.</p>
           </div>
-          <div className="p-4 rounded-xl bg-white border border-[#163C3B]/5 space-y-1.5">
-            <h4 className="font-semibold text-xs text-[#163C3B]">Trauma-Informed Phased Care</h4>
+          <div className="p-4 rounded-xl bg-white border border-[#0B0A0D]/5 space-y-1.5">
+            <h4 className="font-semibold text-xs text-[#0B0A0D]">Trauma-Informed Phased Care</h4>
             <p className="text-xs text-neutral-500">Prioritizing emotional stabilization and agency before processing painful memories.</p>
           </div>
         </div>
       </div>
 
       {/* Somatic Balance Visual Spread */}
-      <section className="rounded-3xl overflow-hidden bg-white border border-[#163C3B]/10 grid grid-cols-1 lg:grid-cols-12 items-center">
+      <section className="rounded-3xl overflow-hidden bg-white border border-[#0B0A0D]/10 grid grid-cols-1 lg:grid-cols-12 items-center">
         <div className="lg:col-span-6 p-8 sm:p-12 space-y-4">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
             Internal Alignment
           </span>
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#163C3B]">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B0A0D]">
             Equilibrium is an active practice, not a static state.
           </h2>
           <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -166,13 +166,13 @@ export function ApproachPage() {
           <div className="pt-2 flex flex-wrap gap-3">
             <Link
               to="/appointment"
-              className="px-6 py-2.5 rounded-full text-xs font-semibold bg-[#163C3B] text-white hover:bg-[#1D4E4D] transition-colors"
+              className="px-6 py-2.5 rounded-full text-xs font-semibold bg-[#0B0A0D] text-white hover:bg-[#151218] transition-colors"
             >
               Book an Initial Consultation
             </Link>
             <Link
               to="/psychologists"
-              className="px-6 py-2.5 rounded-full text-xs font-semibold bg-[#F8F5EF] text-[#163C3B] hover:bg-[#C7D4C1]/40 transition-colors"
+              className="px-6 py-2.5 rounded-full text-xs font-semibold bg-[#FFF9FC] text-[#0B0A0D] hover:bg-[#FBE3EC]/40 transition-colors"
             >
               Browse Clinicians
             </Link>

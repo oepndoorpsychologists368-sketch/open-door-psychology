@@ -16,13 +16,13 @@ export function AppointmentPage() {
 
       {/* Header */}
       <div className="max-w-3xl mx-auto text-center space-y-3">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
           Begin Your Care Journey
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#163C3B]">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B0A0D]">
           Request an Appointment
         </h1>
-        <p className="font-serif text-xl italic text-[#D8A69C]">
+        <p className="font-serif text-xl italic text-[#EFA0BF]">
           “Don’t Cry. Just Come.”
         </p>
         <p className="text-sm text-neutral-600 max-w-xl mx-auto leading-relaxed">
@@ -37,25 +37,25 @@ export function AppointmentPage() {
       />
 
       {/* What happens next explanation */}
-      <div className="max-w-3xl mx-auto rounded-3xl bg-[#F8F5EF] border border-[#163C3B]/10 p-8 space-y-4">
-        <h2 className="font-serif text-xl font-bold text-[#163C3B]">
+      <div className="max-w-3xl mx-auto rounded-3xl bg-[#FFF9FC] border border-[#0B0A0D]/10 p-8 space-y-4">
+        <h2 className="font-serif text-xl font-bold text-[#0B0A0D]">
           What Happens After an Appointment Request?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
           <div className="space-y-1.5">
-            <div className="font-serif font-bold text-base text-[#D8A69C]">1. Intake Review</div>
+            <div className="font-serif font-bold text-base text-[#EFA0BF]">1. Intake Review</div>
             <p className="text-xs text-neutral-600 leading-relaxed">
               Our clinical coordinator reviews availability and ensures your clinician matches your requested goals.
             </p>
           </div>
           <div className="space-y-1.5">
-            <div className="font-serif font-bold text-base text-[#D8A69C]">2. Welcome Welcome</div>
+            <div className="font-serif font-bold text-base text-[#EFA0BF]">2. Welcome Welcome</div>
             <p className="text-xs text-neutral-600 leading-relaxed">
               You receive a welcome packet with studio directions or encrypted telehealth video links.
             </p>
           </div>
           <div className="space-y-1.5">
-            <div className="font-serif font-bold text-base text-[#D8A69C]">3. Your First Session</div>
+            <div className="font-serif font-bold text-base text-[#EFA0BF]">3. Your First Session</div>
             <p className="text-xs text-neutral-600 leading-relaxed">
               Arrive unhurried. The first session is an open, compassionate dialogue without any demand for composure.
             </p>

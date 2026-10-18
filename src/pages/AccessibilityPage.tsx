@@ -9,20 +9,20 @@ export function AccessibilityPage() {
       <Breadcrumbs items={[{ label: 'Accessibility Statement' }]} />
 
       <div className="space-y-4">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
           Universal Access &amp; Care
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#163C3B]">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B0A0D]">
           Accessibility Statement
         </h1>
-        <p className="font-serif text-lg italic text-[#D8A69C]">
+        <p className="font-serif text-lg italic text-[#EFA0BF]">
           “We believe mental health resources must be open and navigable for every person.”
         </p>
       </div>
 
       <div className="space-y-8 text-xs sm:text-sm text-neutral-700 leading-relaxed">
-        <section className="rounded-3xl bg-white border border-[#163C3B]/10 p-8 space-y-4">
-          <h2 className="font-serif text-2xl font-bold text-[#163C3B]">
+        <section className="rounded-3xl bg-white border border-[#0B0A0D]/10 p-8 space-y-4">
+          <h2 className="font-serif text-2xl font-bold text-[#0B0A0D]">
             Our Commitment to Digital Accessibility
           </h2>
           <p>
@@ -35,9 +35,9 @@ export function AccessibilityPage() {
 
         {/* Implemented Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-3">
-            <div className="flex items-center gap-2 font-serif text-lg font-bold text-[#163C3B]">
-              <Keyboard className="w-5 h-5 text-[#163C3B]" />
+          <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-3">
+            <div className="flex items-center gap-2 font-serif text-lg font-bold text-[#0B0A0D]">
+              <Keyboard className="w-5 h-5 text-[#0B0A0D]" />
               <h3>Keyboard Navigation &amp; Focus</h3>
             </div>
             <p className="text-xs text-neutral-600 leading-relaxed">
@@ -45,9 +45,9 @@ export function AccessibilityPage() {
             </p>
           </div>
 
-          <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-3">
-            <div className="flex items-center gap-2 font-serif text-lg font-bold text-[#163C3B]">
-              <Eye className="w-5 h-5 text-[#163C3B]" />
+          <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-3">
+            <div className="flex items-center gap-2 font-serif text-lg font-bold text-[#0B0A0D]">
+              <Eye className="w-5 h-5 text-[#0B0A0D]" />
               <h3>High Contrast &amp; Legibility</h3>
             </div>
             <p className="text-xs text-neutral-600 leading-relaxed">
@@ -55,9 +55,9 @@ export function AccessibilityPage() {
             </p>
           </div>
 
-          <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-3">
-            <div className="flex items-center gap-2 font-serif text-lg font-bold text-[#163C3B]">
-              <Monitor className="w-5 h-5 text-[#163C3B]" />
+          <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-3">
+            <div className="flex items-center gap-2 font-serif text-lg font-bold text-[#0B0A0D]">
+              <Monitor className="w-5 h-5 text-[#0B0A0D]" />
               <h3>Reduced Motion Support</h3>
             </div>
             <p className="text-xs text-neutral-600 leading-relaxed">
@@ -65,9 +65,9 @@ export function AccessibilityPage() {
             </p>
           </div>
 
-          <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-3">
-            <div className="flex items-center gap-2 font-serif text-lg font-bold text-[#163C3B]">
-              <CheckCircle2 className="w-5 h-5 text-[#163C3B]" />
+          <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-3">
+            <div className="flex items-center gap-2 font-serif text-lg font-bold text-[#0B0A0D]">
+              <CheckCircle2 className="w-5 h-5 text-[#0B0A0D]" />
               <h3>Semantic HTML &amp; Screen Readers</h3>
             </div>
             <p className="text-xs text-neutral-600 leading-relaxed">
@@ -77,8 +77,8 @@ export function AccessibilityPage() {
         </div>
 
         {/* Usable Feedback Contact Placeholder */}
-        <section className="rounded-3xl bg-[#F8F5EF] border border-[#163C3B]/10 p-8 space-y-4">
-          <h2 className="font-serif text-2xl font-bold text-[#163C3B]">
+        <section className="rounded-3xl bg-[#FFF9FC] border border-[#0B0A0D]/10 p-8 space-y-4">
+          <h2 className="font-serif text-2xl font-bold text-[#0B0A0D]">
             Reporting Accessibility Barriers
           </h2>
           <p>

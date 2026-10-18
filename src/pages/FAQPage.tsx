@@ -45,13 +45,13 @@ export function FAQPage() {
 
       {/* Header */}
       <div className="text-center space-y-4">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
           Knowledge Base &amp; Guidance
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#163C3B]">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B0A0D]">
           Frequently Asked Questions
         </h1>
-        <p className="font-serif text-xl italic text-[#D8A69C]">
+        <p className="font-serif text-xl italic text-[#EFA0BF]">
           “Every question is valid, especially the ones you feel hesitant to voice.”
         </p>
         <p className="text-sm text-neutral-600 max-w-xl mx-auto leading-relaxed">
@@ -68,7 +68,7 @@ export function FAQPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search questions (e.g. insurance, first session, confidentiality)..."
-            className="w-full pl-11 pr-10 py-3 rounded-2xl bg-white border border-[#163C3B]/10 text-sm focus:outline-hidden focus:border-[#163C3B] focus:ring-1 focus:ring-[#163C3B]"
+            className="w-full pl-11 pr-10 py-3 rounded-2xl bg-white border border-[#0B0A0D]/10 text-sm focus:outline-hidden focus:border-[#0B0A0D] focus:ring-1 focus:ring-[#0B0A0D]"
           />
           {searchQuery && (
             <button
@@ -96,8 +96,8 @@ export function FAQPage() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer flex items-center gap-1.5 ${
                     selectedCategory === cat
-                      ? 'bg-[#163C3B] text-white'
-                      : 'bg-white text-neutral-600 border border-[#163C3B]/10 hover:bg-[#F8F5EF]'
+                      ? 'bg-[#0B0A0D] text-white'
+                      : 'bg-white text-neutral-600 border border-[#0B0A0D]/10 hover:bg-[#FFF9FC]'
                   }`}
                 >
                   <span>{cat === 'all' ? 'All Questions' : cat}</span>
@@ -111,7 +111,7 @@ export function FAQPage() {
             <button
               type="button"
               onClick={expandAll}
-              className="text-[#163C3B] hover:underline font-medium cursor-pointer"
+              className="text-[#0B0A0D] hover:underline font-medium cursor-pointer"
             >
               Expand All
             </button>
@@ -141,31 +141,31 @@ export function FAQPage() {
             return (
               <div
                 key={faq.id}
-                className="rounded-2xl bg-white border border-[#163C3B]/10 overflow-hidden shadow-xs transition-all"
+                className="rounded-2xl bg-white border border-[#0B0A0D]/10 overflow-hidden shadow-xs transition-all"
               >
                 <button
                   type="button"
                   onClick={() => toggleAccordion(faq.id)}
-                  className="w-full p-5 text-left flex items-start justify-between gap-4 cursor-pointer hover:bg-[#F8F5EF]/60 transition-colors"
+                  className="w-full p-5 text-left flex items-start justify-between gap-4 cursor-pointer hover:bg-[#FFF9FC]/60 transition-colors"
                   aria-expanded={isOpen}
                 >
                   <div className="space-y-1">
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-[#163C3B]/60">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-[#0B0A0D]/60">
                       {faq.category}
                     </span>
-                    <h2 className="font-serif text-lg font-bold text-[#163C3B]">
+                    <h2 className="font-serif text-lg font-bold text-[#0B0A0D]">
                       {faq.question}
                     </h2>
                   </div>
                   <ChevronDown
                     className={`w-5 h-5 text-neutral-400 shrink-0 mt-1 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 text-[#163C3B]' : ''
+                      isOpen ? 'rotate-180 text-[#0B0A0D]' : ''
                     }`}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 bg-[#F8F5EF]/30">
+                  <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 bg-[#FFF9FC]/30">
                     {faq.answer}
                   </div>
                 )}
@@ -176,8 +176,8 @@ export function FAQPage() {
       </div>
 
       {/* Still Have a Question? */}
-      <div className="rounded-3xl bg-[#FFFFFF] border border-[#163C3B]/10 p-8 text-center space-y-3">
-        <h3 className="font-serif text-xl font-bold text-[#163C3B]">
+      <div className="rounded-3xl bg-[#FFFFFF] border border-[#0B0A0D]/10 p-8 text-center space-y-3">
+        <h3 className="font-serif text-xl font-bold text-[#0B0A0D]">
           Have a question not addressed here?
         </h3>
         <p className="text-xs sm:text-sm text-neutral-600 max-w-md mx-auto">
@@ -186,13 +186,13 @@ export function FAQPage() {
         <div className="pt-2 flex justify-center gap-3">
           <Link
             to="/contact"
-            className="px-6 py-2.5 rounded-full text-xs font-semibold bg-[#163C3B] text-white hover:bg-[#1D4E4D] transition-colors"
+            className="px-6 py-2.5 rounded-full text-xs font-semibold bg-[#0B0A0D] text-white hover:bg-[#151218] transition-colors"
           >
             Send an Inquiry
           </Link>
           <Link
             to="/appointment"
-            className="px-6 py-2.5 rounded-full text-xs font-semibold bg-[#F8F5EF] text-[#163C3B] border border-[#163C3B]/10 hover:bg-[#C7D4C1]/30 transition-colors"
+            className="px-6 py-2.5 rounded-full text-xs font-semibold bg-[#FFF9FC] text-[#0B0A0D] border border-[#0B0A0D]/10 hover:bg-[#FBE3EC]/30 transition-colors"
           >
             Book Demo
           </Link>

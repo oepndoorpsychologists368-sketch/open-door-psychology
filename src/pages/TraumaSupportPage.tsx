@@ -10,7 +10,7 @@ export function TraumaSupportPage() {
       service={service}
       breadcrumbCategory="Support Areas"
       customIntro={
-        <div className="rounded-2xl bg-[#C7D4C1]/25 border border-[#163C3B]/10 p-6 text-xs sm:text-sm text-[#163C3B] leading-relaxed">
+        <div className="rounded-2xl bg-[#FBE3EC]/25 border border-[#0B0A0D]/10 p-6 text-xs sm:text-sm text-[#0B0A0D] leading-relaxed">
           <strong>Safety, Consent, and Gentle Pacing:</strong> We do not subscribe to therapies that force rapid catharsis or flood you with painful memories. In our trauma-informed framework, you always hold the remote control. We prioritize somatic stability, grounding, and personal boundaries first.
         </div>
       }

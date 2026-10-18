@@ -30,52 +30,52 @@ export function UrgentHelpPage() {
 
       {/* Primary Emergency Hotlines (Accredited Public Services) */}
       <div className="space-y-6">
-        <h2 className="font-serif text-2xl font-bold text-[#163C3B]">
+        <h2 className="font-serif text-2xl font-bold text-[#0B0A0D]">
           Accredited 24/7 Crisis Support Resources
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* 988 Suicide & Crisis Lifeline */}
-          <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-3 shadow-xs">
+          <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-3 shadow-xs">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-400">
               <PhoneCall className="w-4 h-4 text-rose-700" />
               <span>United States &amp; Canada</span>
             </div>
-            <h3 className="font-serif text-2xl font-bold text-[#163C3B]">
+            <h3 className="font-serif text-2xl font-bold text-[#0B0A0D]">
               988 Suicide &amp; Crisis Lifeline
             </h3>
             <p className="text-xs text-neutral-600 leading-relaxed">
               Free, confidential 24/7 telephone and chat support for individuals in suicidal crisis or emotional distress.
             </p>
-            <div className="pt-2 text-xs font-semibold text-[#163C3B]">
+            <div className="pt-2 text-xs font-semibold text-[#0B0A0D]">
               Dial or Text: <span className="font-mono text-sm bg-neutral-100 px-2 py-0.5 rounded-md">988</span>
             </div>
           </div>
 
           {/* Crisis Text Line */}
-          <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-3 shadow-xs">
+          <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-3 shadow-xs">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-400">
-              <MessageSquare className="w-4 h-4 text-[#163C3B]" />
+              <MessageSquare className="w-4 h-4 text-[#0B0A0D]" />
               <span>Free 24/7 Text Support</span>
             </div>
-            <h3 className="font-serif text-2xl font-bold text-[#163C3B]">
+            <h3 className="font-serif text-2xl font-bold text-[#0B0A0D]">
               Crisis Text Line
             </h3>
             <p className="text-xs text-neutral-600 leading-relaxed">
               Connect with a trained crisis counselor via confidential text message from anywhere in the US, UK, or Canada.
             </p>
-            <div className="pt-2 text-xs font-semibold text-[#163C3B]">
+            <div className="pt-2 text-xs font-semibold text-[#0B0A0D]">
               Text <span className="font-mono text-sm bg-neutral-100 px-2 py-0.5 rounded-md">HOME</span> to <span className="font-mono text-sm bg-neutral-100 px-2 py-0.5 rounded-md">741741</span>
             </div>
           </div>
 
           {/* Local Emergency Services */}
-          <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-3 shadow-xs">
+          <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-3 shadow-xs">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-400">
               <AlertTriangle className="w-4 h-4 text-amber-600" />
               <span>Immediate Physical Danger</span>
             </div>
-            <h3 className="font-serif text-2xl font-bold text-[#163C3B]">
+            <h3 className="font-serif text-2xl font-bold text-[#0B0A0D]">
               Emergency Medical Services
             </h3>
             <p className="text-xs text-neutral-600 leading-relaxed">
@@ -84,12 +84,12 @@ export function UrgentHelpPage() {
           </div>
 
           {/* International Resources */}
-          <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-3 shadow-xs">
+          <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-3 shadow-xs">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-400">
-              <Globe className="w-4 h-4 text-[#163C3B]" />
+              <Globe className="w-4 h-4 text-[#0B0A0D]" />
               <span>International Directory</span>
             </div>
-            <h3 className="font-serif text-2xl font-bold text-[#163C3B]">
+            <h3 className="font-serif text-2xl font-bold text-[#0B0A0D]">
               Befrienders Worldwide &amp; IASP
             </h3>
             <p className="text-xs text-neutral-600 leading-relaxed">
@@ -100,8 +100,8 @@ export function UrgentHelpPage() {
       </div>
 
       {/* Grounding & Holding Space Note */}
-      <div className="rounded-3xl bg-[#F8F5EF] border border-[#163C3B]/10 p-8 space-y-3">
-        <h3 className="font-serif text-xl font-bold text-[#163C3B]">
+      <div className="rounded-3xl bg-[#FFF9FC] border border-[#0B0A0D]/10 p-8 space-y-3">
+        <h3 className="font-serif text-xl font-bold text-[#0B0A0D]">
           A Grounding Remainder While You Connect
         </h3>
         <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">

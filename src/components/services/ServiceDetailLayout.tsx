@@ -32,13 +32,13 @@ export function ServiceDetailLayout({
 
       {/* Hero Header */}
       <div className="max-w-3xl space-y-4">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
           {service.category === 'core' ? 'Clinical Discipline' : 'Focused Support Pathway'}
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#163C3B] text-balance">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B0A0D] text-balance">
           {service.heroHeadline}
         </h1>
-        <p className="font-serif text-xl italic text-[#D8A69C]">
+        <p className="font-serif text-xl italic text-[#EFA0BF]">
           “{service.heroSubheadline}”
         </p>
         <p className="text-base text-neutral-600 leading-relaxed">
@@ -48,13 +48,13 @@ export function ServiceDetailLayout({
         <div className="pt-2 flex flex-wrap gap-4">
           <Link
             to={`/appointment?service=${service.slug}`}
-            className="px-6 py-3 rounded-full text-xs font-semibold text-[#F8F5EF] bg-[#163C3B] hover:bg-[#1D4E4D] transition-colors"
+            className="px-6 py-3 rounded-full text-xs font-semibold text-[#FFF9FC] bg-[#0B0A0D] hover:bg-[#151218] transition-colors"
           >
             Request Consultation for {service.title}
           </Link>
           <Link
             to="/fees"
-            className="px-6 py-3 rounded-full text-xs font-medium text-[#163C3B] border border-[#163C3B]/20 hover:bg-[#163C3B]/5 transition-colors"
+            className="px-6 py-3 rounded-full text-xs font-medium text-[#0B0A0D] border border-[#0B0A0D]/20 hover:bg-[#0B0A0D]/5 transition-colors"
           >
             View Fee &amp; Superbill Info
           </Link>
@@ -65,32 +65,32 @@ export function ServiceDetailLayout({
 
       {/* Session Metrics Bar */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-5 space-y-1">
+        <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-5 space-y-1">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-400">
-            <Clock className="w-4 h-4 text-[#163C3B]" />
+            <Clock className="w-4 h-4 text-[#0B0A0D]" />
             <span>Session Duration</span>
           </div>
-          <div className="font-serif text-xl font-bold text-[#163C3B]">
+          <div className="font-serif text-xl font-bold text-[#0B0A0D]">
             {service.sessionStructure.duration}
           </div>
         </div>
 
-        <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-5 space-y-1">
+        <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-5 space-y-1">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-400">
-            <Calendar className="w-4 h-4 text-[#163C3B]" />
+            <Calendar className="w-4 h-4 text-[#0B0A0D]" />
             <span>Recommended Cadence</span>
           </div>
-          <div className="font-serif text-xl font-bold text-[#163C3B]">
+          <div className="font-serif text-xl font-bold text-[#0B0A0D]">
             {service.sessionStructure.cadence}
           </div>
         </div>
 
-        <div className="rounded-2xl bg-white border border-[#163C3B]/10 p-5 space-y-1">
+        <div className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-5 space-y-1">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-400">
-            <Shield className="w-4 h-4 text-[#163C3B]" />
+            <Shield className="w-4 h-4 text-[#0B0A0D]" />
             <span>Focus &amp; Pacing</span>
           </div>
-          <div className="text-xs sm:text-sm font-semibold text-[#163C3B] mt-0.5">
+          <div className="text-xs sm:text-sm font-semibold text-[#0B0A0D] mt-0.5">
             {service.sessionStructure.focus}
           </div>
         </div>
@@ -99,8 +99,8 @@ export function ServiceDetailLayout({
       {/* 2-Column: Ideal For & What To Expect */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Ideal For */}
-        <div className="lg:col-span-6 rounded-3xl bg-white border border-[#163C3B]/10 p-8 space-y-4">
-          <h2 className="font-serif text-2xl font-bold text-[#163C3B]">
+        <div className="lg:col-span-6 rounded-3xl bg-white border border-[#0B0A0D]/10 p-8 space-y-4">
+          <h2 className="font-serif text-2xl font-bold text-[#0B0A0D]">
             Who Often Seeks This Support
           </h2>
           <p className="text-xs sm:text-sm text-neutral-500">
@@ -109,7 +109,7 @@ export function ServiceDetailLayout({
           <ul className="space-y-3 pt-2">
             {service.idealFor.map((item, idx) => (
               <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-neutral-600">
-                <CheckCircle2 className="w-4 h-4 text-[#C7D4C1] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#FBE3EC] shrink-0 mt-0.5" />
                 <span>{item}</span>
               </li>
             ))}
@@ -117,8 +117,8 @@ export function ServiceDetailLayout({
         </div>
 
         {/* What to Expect */}
-        <div className="lg:col-span-6 rounded-3xl bg-[#F8F5EF] border border-[#163C3B]/10 p-8 space-y-4">
-          <h2 className="font-serif text-2xl font-bold text-[#163C3B]">
+        <div className="lg:col-span-6 rounded-3xl bg-[#FFF9FC] border border-[#0B0A0D]/10 p-8 space-y-4">
+          <h2 className="font-serif text-2xl font-bold text-[#0B0A0D]">
             What to Expect in Sessions
           </h2>
           <p className="text-xs sm:text-sm text-neutral-500">
@@ -127,7 +127,7 @@ export function ServiceDetailLayout({
           <ul className="space-y-3 pt-2">
             {service.whatToExpect.map((item, idx) => (
               <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-neutral-600">
-                <span className="font-serif font-bold text-[#D8A69C] mt-0.5">{idx + 1}.</span>
+                <span className="font-serif font-bold text-[#EFA0BF] mt-0.5">{idx + 1}.</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -137,17 +137,17 @@ export function ServiceDetailLayout({
 
       {/* Key Pillars Grid */}
       <section className="space-y-6">
-        <div className="border-b border-[#163C3B]/10 pb-4">
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#163C3B]">
+        <div className="border-b border-[#0B0A0D]/10 pb-4">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B0A0D]">
             Core Tenets of Our {service.title} Care
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {service.keyPillars.map((pillar, i) => (
-            <div key={i} className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 space-y-2">
-              <span className="text-xs font-mono font-bold text-[#D8A69C]">0{i + 1}</span>
-              <h3 className="font-serif text-lg font-bold text-[#163C3B]">{pillar.title}</h3>
+            <div key={i} className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 space-y-2">
+              <span className="text-xs font-mono font-bold text-[#EFA0BF]">0{i + 1}</span>
+              <h3 className="font-serif text-lg font-bold text-[#0B0A0D]">{pillar.title}</h3>
               <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">{pillar.description}</p>
             </div>
           ))}
@@ -157,16 +157,16 @@ export function ServiceDetailLayout({
       {/* Recommended Clinicians */}
       {recommendedPsychologists.length > 0 && (
         <section className="space-y-6 pt-4">
-          <div className="border-b border-[#163C3B]/10 pb-4 flex items-center justify-between">
+          <div className="border-b border-[#0B0A0D]/10 pb-4 flex items-center justify-between">
             <div>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#163C3B]">
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B0A0D]">
                 Psychologists Specializing in {service.title}
               </h2>
               <p className="text-xs sm:text-sm text-neutral-500 mt-1">
                 Clinicians on our demonstration team with dedicated focus in this domain.
               </p>
             </div>
-            <Link to="/psychologists" className="text-xs font-semibold text-[#163C3B] hover:underline hidden sm:block">
+            <Link to="/psychologists" className="text-xs font-semibold text-[#0B0A0D] hover:underline hidden sm:block">
               View all psychologists &rarr;
             </Link>
           </div>
@@ -175,7 +175,7 @@ export function ServiceDetailLayout({
             {recommendedPsychologists.map((psy) => (
               <div
                 key={psy.slug}
-                className="rounded-2xl bg-white border border-[#163C3B]/10 p-6 flex flex-col justify-between group hover:shadow-md transition-shadow"
+                className="rounded-2xl bg-white border border-[#0B0A0D]/10 p-6 flex flex-col justify-between group hover:shadow-md transition-shadow"
               >
                 <div className="space-y-4">
                   <div className="aspect-square rounded-xl overflow-hidden bg-neutral-100">
@@ -186,8 +186,8 @@ export function ServiceDetailLayout({
                     />
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg font-bold text-[#163C3B]">{psy.name}</h3>
-                    <div className="text-xs text-[#D8A69C]">{psy.title}</div>
+                    <h3 className="font-serif text-lg font-bold text-[#0B0A0D]">{psy.name}</h3>
+                    <div className="text-xs text-[#EFA0BF]">{psy.title}</div>
                   </div>
                   <p className="text-xs text-neutral-600 line-clamp-3">{psy.bio}</p>
                 </div>
@@ -195,13 +195,13 @@ export function ServiceDetailLayout({
                 <div className="pt-6 mt-6 border-t border-neutral-100 flex items-center justify-between">
                   <Link
                     to={`/psychologists/${psy.slug}`}
-                    className="text-xs font-semibold text-[#163C3B] group-hover:underline"
+                    className="text-xs font-semibold text-[#0B0A0D] group-hover:underline"
                   >
                     View profile
                   </Link>
                   <Link
                     to={`/appointment?service=${service.slug}&psychologist=${psy.slug}`}
-                    className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#163C3B] text-white hover:bg-[#1D4E4D]"
+                    className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#0B0A0D] text-white hover:bg-[#151218]"
                   >
                     Request
                   </Link>
@@ -213,7 +213,7 @@ export function ServiceDetailLayout({
       )}
 
       {/* Bottom Booking Invitation */}
-      <section className="rounded-3xl bg-[#163C3B] text-white p-8 sm:p-12 text-center space-y-4">
+      <section className="rounded-3xl bg-[#0B0A0D] text-white p-8 sm:p-12 text-center space-y-4">
         <h2 className="font-serif text-2xl sm:text-3xl font-bold">
           Ready to begin {service.title.toLowerCase()}?
         </h2>
@@ -223,7 +223,7 @@ export function ServiceDetailLayout({
         <div className="pt-2 flex justify-center gap-4">
           <Link
             to={`/appointment?service=${service.slug}`}
-            className="px-6 py-3 rounded-full text-xs font-semibold bg-[#F8F5EF] text-[#163C3B] hover:bg-white transition-colors"
+            className="px-6 py-3 rounded-full text-xs font-semibold bg-[#FFF9FC] text-[#0B0A0D] hover:bg-white transition-colors"
           >
             Schedule Demonstration Session
           </Link>

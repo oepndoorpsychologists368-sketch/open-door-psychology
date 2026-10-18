@@ -13,13 +13,13 @@ export function AboutPage() {
       {/* Hero Split Header */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-6">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
             Our Purpose &amp; Heritage
           </span>
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#163C3B] text-balance">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B0A0D] text-balance">
             Creating an Unhurried Sanctuary for Honest Human Recovery
           </h1>
-          <p className="font-serif text-xl italic text-[#D8A69C]">
+          <p className="font-serif text-xl italic text-[#EFA0BF]">
             “We founded Open Door on a simple premise: care shouldn’t require you to apologize for your distress.”
           </p>
           <p className="text-base text-neutral-600 leading-relaxed">
@@ -28,13 +28,13 @@ export function AboutPage() {
           <div className="pt-2 flex flex-wrap gap-4">
             <Link
               to="/appointment"
-              className="px-6 py-3 rounded-full text-xs font-semibold text-[#F8F5EF] bg-[#163C3B] hover:bg-[#1D4E4D] transition-colors"
+              className="px-6 py-3 rounded-full text-xs font-semibold text-[#FFF9FC] bg-[#0B0A0D] hover:bg-[#151218] transition-colors"
             >
               Book an Initial Consultation
             </Link>
             <Link
               to="/psychologists"
-              className="px-6 py-3 rounded-full text-xs font-medium text-[#163C3B] border border-[#163C3B]/20 hover:bg-[#163C3B]/5 transition-colors"
+              className="px-6 py-3 rounded-full text-xs font-medium text-[#0B0A0D] border border-[#0B0A0D]/20 hover:bg-[#0B0A0D]/5 transition-colors"
             >
               Meet Our Clinicians
             </Link>
@@ -42,7 +42,7 @@ export function AboutPage() {
         </div>
 
         <div className="lg:col-span-5">
-          <div className="rounded-3xl overflow-hidden shadow-lg border border-[#163C3B]/10 aspect-4/5">
+          <div className="rounded-3xl overflow-hidden shadow-lg border border-[#0B0A0D]/10 aspect-4/5">
             <img
               src={siteImages.architecturalArch}
               alt="Open Door peaceful architectural archway"
@@ -53,12 +53,12 @@ export function AboutPage() {
       </div>
 
       {/* The Origin of "Don't Cry. Just Come." */}
-      <section className="rounded-3xl bg-[#FFFFFF] border border-[#163C3B]/10 p-8 sm:p-12 space-y-6">
+      <section className="rounded-3xl bg-[#FFFFFF] border border-[#0B0A0D]/10 p-8 sm:p-12 space-y-6">
         <div className="max-w-3xl space-y-4">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
             The Origin of Our Motto
           </span>
-          <h2 className="font-serif text-3xl font-bold text-[#163C3B]">
+          <h2 className="font-serif text-3xl font-bold text-[#0B0A0D]">
             Why “Don’t Cry. Just Come.”?
           </h2>
           <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
@@ -73,20 +73,20 @@ export function AboutPage() {
       {/* Core Practice Values Grid */}
       <section className="space-y-8">
         <div className="text-center max-w-xl mx-auto space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
             What Drives Us Every Day
           </span>
-          <h2 className="font-serif text-3xl font-bold text-[#163C3B]">
+          <h2 className="font-serif text-3xl font-bold text-[#0B0A0D]">
             Our Foundational Commitments
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="rounded-2xl bg-[#FFFFFF] border border-[#163C3B]/10 p-6 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-[#C7D4C1]/40 text-[#163C3B] flex items-center justify-center">
+          <div className="rounded-2xl bg-[#FFFFFF] border border-[#0B0A0D]/10 p-6 space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-[#FBE3EC]/40 text-[#0B0A0D] flex items-center justify-center">
               <Shield className="w-5 h-5" />
             </div>
-            <h3 className="font-serif text-xl font-bold text-[#163C3B]">
+            <h3 className="font-serif text-xl font-bold text-[#0B0A0D]">
               Ethical Integrity &amp; Strict Discretion
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -94,11 +94,11 @@ export function AboutPage() {
             </p>
           </div>
 
-          <div className="rounded-2xl bg-[#FFFFFF] border border-[#163C3B]/10 p-6 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-[#D8A69C]/40 text-[#163C3B] flex items-center justify-center">
+          <div className="rounded-2xl bg-[#FFFFFF] border border-[#0B0A0D]/10 p-6 space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-[#EFA0BF]/40 text-[#0B0A0D] flex items-center justify-center">
               <Compass className="w-5 h-5" />
             </div>
-            <h3 className="font-serif text-xl font-bold text-[#163C3B]">
+            <h3 className="font-serif text-xl font-bold text-[#0B0A0D]">
               Relational Collaboration
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -106,11 +106,11 @@ export function AboutPage() {
             </p>
           </div>
 
-          <div className="rounded-2xl bg-[#FFFFFF] border border-[#163C3B]/10 p-6 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-[#D9D1E7]/50 text-[#163C3B] flex items-center justify-center">
+          <div className="rounded-2xl bg-[#FFFFFF] border border-[#0B0A0D]/10 p-6 space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-[#D9D1E7]/50 text-[#0B0A0D] flex items-center justify-center">
               <Sparkles className="w-5 h-5" />
             </div>
-            <h3 className="font-serif text-xl font-bold text-[#163C3B]">
+            <h3 className="font-serif text-xl font-bold text-[#0B0A0D]">
               Environment as Medicine
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -121,7 +121,7 @@ export function AboutPage() {
       </section>
 
       {/* Sanctuary Environment Visual Spread */}
-      <section className="rounded-3xl overflow-hidden bg-white border border-[#163C3B]/10 grid grid-cols-1 lg:grid-cols-12 items-center">
+      <section className="rounded-3xl overflow-hidden bg-white border border-[#0B0A0D]/10 grid grid-cols-1 lg:grid-cols-12 items-center">
         <div className="lg:col-span-6 h-full min-h-[340px]">
           <img
             src={siteImages.botanicalCourtyard}
@@ -130,10 +130,10 @@ export function AboutPage() {
           />
         </div>
         <div className="lg:col-span-6 p-8 sm:p-12 space-y-4">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
             A Space Crafted for Safety
           </span>
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#163C3B]">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B0A0D]">
             Why the Physical Setting Matters
           </h2>
           <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -145,7 +145,7 @@ export function AboutPage() {
           <div className="pt-2">
             <Link
               to="/approach"
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#163C3B] hover:underline"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B0A0D] hover:underline"
             >
               <span>Explore our collaborative approach</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -155,7 +155,7 @@ export function AboutPage() {
       </section>
 
       {/* Bottom CTA Block */}
-      <section className="rounded-3xl bg-[#163C3B] text-white p-8 sm:p-12 text-center space-y-4">
+      <section className="rounded-3xl bg-[#0B0A0D] text-white p-8 sm:p-12 text-center space-y-4">
         <h2 className="font-serif text-2xl sm:text-3xl font-bold">
           Ready to experience a different kind of psychology practice?
         </h2>
@@ -165,7 +165,7 @@ export function AboutPage() {
         <div className="pt-2 flex justify-center">
           <Link
             to="/appointment"
-            className="px-6 py-3 rounded-full text-xs font-semibold bg-[#F8F5EF] text-[#163C3B] hover:bg-white transition-colors"
+            className="px-6 py-3 rounded-full text-xs font-semibold bg-[#FFF9FC] text-[#0B0A0D] hover:bg-white transition-colors"
           >
             Schedule a Consultation
           </Link>

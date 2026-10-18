@@ -76,12 +76,12 @@ export function Navbar() {
               </svg>
             </div>
             
-            <div className="flex flex-col min-w-0 truncate">
-              <div className="flex items-center gap-1.5 font-serif text-base sm:text-lg lg:text-lg xl:text-xl font-bold tracking-tight text-[#0B0A0D] whitespace-nowrap group-hover:text-[#C87596] transition-colors">
+            <div className="flex flex-col min-w-0">
+              <div className="flex items-center gap-1.5 font-serif text-xs sm:text-sm md:text-base lg:text-lg font-bold tracking-tight text-[#0B0A0D] group-hover:text-[#C87596] transition-colors leading-tight">
                 <span>{BRAND_CONFIG.name}</span>
-                <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#EFA0BF]"></span>
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#EFA0BF] shrink-0"></span>
               </div>
-              <span className="text-[10px] font-semibold tracking-wider text-[#C87596] uppercase font-sans -mt-0.5 truncate hidden sm:block">
+              <span className="text-[9px] sm:text-[10px] font-semibold tracking-wider text-[#C87596] uppercase font-sans -mt-0.5 truncate hidden sm:block">
                 Psychology &amp; Wellness Sanctuary
               </span>
             </div>

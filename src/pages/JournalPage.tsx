@@ -44,13 +44,13 @@ export function JournalPage() {
 
       {/* Header */}
       <div className="max-w-3xl space-y-4">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
           The Open Door Journal
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#163C3B]">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B0A0D]">
           Reflections on Mind, Body &amp; Vulnerability
         </h1>
-        <p className="font-serif text-xl italic text-[#D8A69C]">
+        <p className="font-serif text-xl italic text-[#EFA0BF]">
           “Original essays on emotional pacing, nervous system regulation, and modern relationships.”
         </p>
         <p className="text-base text-neutral-600 leading-relaxed">
@@ -60,10 +60,10 @@ export function JournalPage() {
 
       {/* Featured Lead Editorial Article */}
       {featuredArticle && currentPage === 1 && selectedCategory === 'all' && !searchQuery && (
-        <div className="rounded-3xl bg-[#FFFFFF] border border-[#163C3B]/10 overflow-hidden shadow-xs grid grid-cols-1 lg:grid-cols-12 items-center">
+        <div className="rounded-3xl bg-[#FFFFFF] border border-[#0B0A0D]/10 overflow-hidden shadow-xs grid grid-cols-1 lg:grid-cols-12 items-center">
           <div className="lg:col-span-6 p-8 sm:p-12 space-y-5">
             <div className="flex items-center gap-2 text-xs text-neutral-500">
-              <span className="font-semibold text-[#163C3B] uppercase tracking-wider">{featuredArticle.category}</span>
+              <span className="font-semibold text-[#0B0A0D] uppercase tracking-wider">{featuredArticle.category}</span>
               <span aria-hidden="true">·</span>
               <span>{featuredArticle.publishDate}</span>
               <span aria-hidden="true">·</span>
@@ -73,13 +73,13 @@ export function JournalPage() {
               </span>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#163C3B] text-balance">
-              <Link to={`/journal/${featuredArticle.slug}`} className="hover:text-[#1D4E4D]">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0B0A0D] text-balance">
+              <Link to={`/journal/${featuredArticle.slug}`} className="hover:text-[#151218]">
                 {featuredArticle.title}
               </Link>
             </h2>
 
-            <p className="font-serif text-base italic text-[#D8A69C]">
+            <p className="font-serif text-base italic text-[#EFA0BF]">
               {featuredArticle.subtitle}
             </p>
 
@@ -90,7 +90,7 @@ export function JournalPage() {
             <div className="pt-2">
               <Link
                 to={`/journal/${featuredArticle.slug}`}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold bg-[#163C3B] text-white hover:bg-[#1D4E4D] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold bg-[#0B0A0D] text-white hover:bg-[#151218] transition-colors"
               >
                 <span>Read Full Article</span>
                 <ArrowRight className="w-4 h-4" />
@@ -120,7 +120,7 @@ export function JournalPage() {
               setCurrentPage(1);
             }}
             placeholder="Search articles by theme or keyword..."
-            className="w-full pl-11 pr-4 py-2.5 rounded-xl bg-white border border-[#163C3B]/10 text-xs sm:text-sm focus:outline-hidden focus:border-[#163C3B]"
+            className="w-full pl-11 pr-4 py-2.5 rounded-xl bg-white border border-[#0B0A0D]/10 text-xs sm:text-sm focus:outline-hidden focus:border-[#0B0A0D]"
           />
         </div>
 
@@ -138,8 +138,8 @@ export function JournalPage() {
                 onClick={() => handleCategoryChange(cat)}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer flex items-center gap-1.5 ${
                   selectedCategory === cat
-                    ? 'bg-[#163C3B] text-white'
-                    : 'bg-white text-neutral-600 border border-[#163C3B]/10 hover:bg-[#F8F5EF]'
+                    ? 'bg-[#0B0A0D] text-white'
+                    : 'bg-white text-neutral-600 border border-[#0B0A0D]/10 hover:bg-[#FFF9FC]'
                 }`}
               >
                 <span>{cat === 'all' ? 'All Articles' : cat}</span>
@@ -158,11 +158,11 @@ export function JournalPage() {
             return (
               <article
                 key={art.slug}
-                className="rounded-3xl bg-white border border-[#163C3B]/10 p-7 flex flex-col justify-between hover:shadow-lg transition-all group"
+                className="rounded-3xl bg-white border border-[#0B0A0D]/10 p-7 flex flex-col justify-between hover:shadow-lg transition-all group"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between text-xs text-neutral-400">
-                    <span className="font-semibold text-[#163C3B] uppercase tracking-wider text-[11px]">
+                    <span className="font-semibold text-[#0B0A0D] uppercase tracking-wider text-[11px]">
                       {art.category}
                     </span>
                     <div className="flex items-center gap-1">
@@ -171,7 +171,7 @@ export function JournalPage() {
                     </div>
                   </div>
 
-                  <h3 className="font-serif text-2xl font-bold text-[#163C3B] group-hover:text-[#1D4E4D]">
+                  <h3 className="font-serif text-2xl font-bold text-[#0B0A0D] group-hover:text-[#151218]">
                     <Link to={`/journal/${art.slug}`}>
                       {art.title}
                     </Link>
@@ -194,7 +194,7 @@ export function JournalPage() {
                 <div className="pt-6 mt-6 border-t border-neutral-100 flex items-center justify-between">
                   <Link
                     to={`/journal/${art.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#163C3B] group-hover:underline"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B0A0D] group-hover:underline"
                   >
                     <span>Read article</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -208,12 +208,12 @@ export function JournalPage() {
 
         {/* Working Pagination Bar */}
         {totalPages > 1 && (
-          <div className="flex items-center justify-between pt-6 border-t border-[#163C3B]/10">
+          <div className="flex items-center justify-between pt-6 border-t border-[#0B0A0D]/10">
             <button
               type="button"
               disabled={currentPage === 1}
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-[#163C3B]/10 text-[#163C3B] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#F8F5EF] transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-[#0B0A0D]/10 text-[#0B0A0D] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#FFF9FC] transition-colors cursor-pointer"
             >
               <ChevronLeft className="w-4 h-4" />
               <span>Previous Page</span>
@@ -227,8 +227,8 @@ export function JournalPage() {
                   onClick={() => setCurrentPage(pageNum)}
                   className={`w-8 h-8 rounded-lg font-semibold transition-colors cursor-pointer ${
                     currentPage === pageNum
-                      ? 'bg-[#163C3B] text-white'
-                      : 'bg-white border border-neutral-200 text-neutral-700 hover:bg-[#F8F5EF]'
+                      ? 'bg-[#0B0A0D] text-white'
+                      : 'bg-white border border-neutral-200 text-neutral-700 hover:bg-[#FFF9FC]'
                   }`}
                 >
                   {pageNum}
@@ -241,7 +241,7 @@ export function JournalPage() {
               type="button"
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-[#163C3B]/10 text-[#163C3B] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#F8F5EF] transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-[#0B0A0D]/10 text-[#0B0A0D] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#FFF9FC] transition-colors cursor-pointer"
             >
               <span>Next Page</span>
               <ChevronRight className="w-4 h-4" />
@@ -251,7 +251,7 @@ export function JournalPage() {
       </div>
 
       {/* Meditative Interlude Banner */}
-      <div className="rounded-3xl bg-[#F8F5EF] border border-[#163C3B]/10 p-8 sm:p-10 flex flex-col md:flex-row items-center gap-8">
+      <div className="rounded-3xl bg-[#FFF9FC] border border-[#0B0A0D]/10 p-8 sm:p-10 flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/3 aspect-4/3 rounded-2xl overflow-hidden shadow-xs">
           <img
             src={siteImages.stoneBalance}
@@ -260,10 +260,10 @@ export function JournalPage() {
           />
         </div>
         <div className="w-full md:w-2/3 space-y-3">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
             Somatic Integration
           </span>
-          <h3 className="font-serif text-2xl font-bold text-[#163C3B]">
+          <h3 className="font-serif text-2xl font-bold text-[#0B0A0D]">
             Reading is reflection; practice is transformation.
           </h3>
           <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -272,7 +272,7 @@ export function JournalPage() {
           <div className="pt-1">
             <Link
               to="/appointment"
-              className="inline-flex items-center gap-2 text-xs font-semibold text-[#163C3B] hover:underline"
+              className="inline-flex items-center gap-2 text-xs font-semibold text-[#0B0A0D] hover:underline"
             >
               <span>Begin one-on-one sessions with our team</span>
               <ArrowRight className="w-3.5 h-3.5" />

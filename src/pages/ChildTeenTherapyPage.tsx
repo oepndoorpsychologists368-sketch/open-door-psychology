@@ -9,7 +9,7 @@ export function ChildTeenTherapyPage() {
     <ServiceDetailLayout
       service={service}
       customIntro={
-        <div className="rounded-2xl bg-[#C7D4C1]/20 border border-[#163C3B]/10 p-6 text-xs sm:text-sm text-[#163C3B] leading-relaxed">
+        <div className="rounded-2xl bg-[#FBE3EC]/20 border border-[#0B0A0D]/10 p-6 text-xs sm:text-sm text-[#0B0A0D] leading-relaxed">
           <strong>Youth Agency &amp; Caregiver Alliance:</strong> Adolescents need an environment where they do not feel audited or judged by adults. We maintain strict ethical confidentiality with teens regarding their personal reflections, while providing parents with high-level guidance on communication and home support.
         </div>
       }

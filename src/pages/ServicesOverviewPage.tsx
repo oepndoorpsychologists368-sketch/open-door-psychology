@@ -14,13 +14,13 @@ export function ServicesOverviewPage() {
 
       {/* Header */}
       <div className="max-w-3xl space-y-4">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]/70">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B0A0D]/70">
           Tailored Care Pathways
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#163C3B]">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B0A0D]">
           Comprehensive Psychological Services
         </h1>
-        <p className="font-serif text-xl italic text-[#D8A69C]">
+        <p className="font-serif text-xl italic text-[#EFA0BF]">
           “Whether you are coming on your own, with a partner, or seeking support for a teen, our door is open.”
         </p>
         <p className="text-base text-neutral-600 leading-relaxed">
@@ -30,8 +30,8 @@ export function ServicesOverviewPage() {
 
       {/* 1. Core Therapy Formats Section */}
       <section className="space-y-6">
-        <div className="border-b border-[#163C3B]/10 pb-4">
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#163C3B]">
+        <div className="border-b border-[#0B0A0D]/10 pb-4">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B0A0D]">
             Core Clinical Disciplines
           </h2>
           <p className="text-xs sm:text-sm text-neutral-500 mt-1">
@@ -43,7 +43,7 @@ export function ServicesOverviewPage() {
           {coreServices.map((svc) => (
             <div
               key={svc.slug}
-              className="rounded-3xl bg-[#FFFFFF] border border-[#163C3B]/10 p-8 flex flex-col justify-between hover:shadow-md transition-shadow group"
+              className="rounded-3xl bg-[#FFFFFF] border border-[#0B0A0D]/10 p-8 flex flex-col justify-between hover:shadow-md transition-shadow group"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between text-xs text-neutral-400">
@@ -51,7 +51,7 @@ export function ServicesOverviewPage() {
                   <span className="capitalize">{svc.sessionStructure.cadence}</span>
                 </div>
 
-                <h3 className="font-serif text-2xl font-bold text-[#163C3B] group-hover:text-[#1D4E4D]">
+                <h3 className="font-serif text-2xl font-bold text-[#0B0A0D] group-hover:text-[#151218]">
                   {svc.title}
                 </h3>
 
@@ -60,13 +60,13 @@ export function ServicesOverviewPage() {
                 </p>
 
                 <div className="pt-3 border-t border-neutral-100">
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#163C3B]/70 block mb-2">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#0B0A0D]/70 block mb-2">
                     Common Focus Areas:
                   </span>
                   <ul className="text-xs text-neutral-500 space-y-1">
                     {svc.idealFor.slice(0, 3).map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <span className="text-[#D8A69C] mt-0.5">•</span>
+                        <span className="text-[#EFA0BF] mt-0.5">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -77,7 +77,7 @@ export function ServicesOverviewPage() {
               <div className="pt-6 mt-6 border-t border-neutral-100 flex items-center justify-between">
                 <Link
                   to={`/services/${svc.slug}`}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#163C3B] hover:underline"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B0A0D] hover:underline"
                 >
                   <span>Detailed service overview</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -85,7 +85,7 @@ export function ServicesOverviewPage() {
 
                 <Link
                   to={`/appointment?service=${svc.slug}`}
-                  className="px-4 py-2 rounded-full text-xs font-semibold bg-[#163C3B] text-white hover:bg-[#1D4E4D] transition-colors"
+                  className="px-4 py-2 rounded-full text-xs font-semibold bg-[#0B0A0D] text-white hover:bg-[#151218] transition-colors"
                 >
                   Book Demo
                 </Link>
@@ -97,8 +97,8 @@ export function ServicesOverviewPage() {
 
       {/* 2. Specialized Clinical Support Areas */}
       <section className="space-y-6 pt-6">
-        <div className="border-b border-[#163C3B]/10 pb-4">
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#163C3B]">
+        <div className="border-b border-[#0B0A0D]/10 pb-4">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B0A0D]">
             Focused Support Areas
           </h2>
           <p className="text-xs sm:text-sm text-neutral-500 mt-1">
@@ -110,13 +110,13 @@ export function ServicesOverviewPage() {
           {specializedServices.map((svc) => (
             <div
               key={svc.slug}
-              className="rounded-3xl bg-[#F8F5EF] border border-[#163C3B]/15 p-7 flex flex-col justify-between hover:bg-white hover:shadow-md transition-all group"
+              className="rounded-3xl bg-[#FFF9FC] border border-[#0B0A0D]/15 p-7 flex flex-col justify-between hover:bg-white hover:shadow-md transition-all group"
             >
               <div className="space-y-3">
                 <span className="text-[11px] font-mono text-neutral-400">
                   {svc.sessionStructure.duration}
                 </span>
-                <h3 className="font-serif text-xl font-bold text-[#163C3B]">
+                <h3 className="font-serif text-xl font-bold text-[#0B0A0D]">
                   {svc.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -124,17 +124,17 @@ export function ServicesOverviewPage() {
                 </p>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-[#163C3B]/10 flex items-center justify-between">
+              <div className="pt-6 mt-6 border-t border-[#0B0A0D]/10 flex items-center justify-between">
                 <Link
                   to={`/support/${svc.slug}`}
-                  className="text-xs font-bold text-[#163C3B] group-hover:underline flex items-center gap-1"
+                  className="text-xs font-bold text-[#0B0A0D] group-hover:underline flex items-center gap-1"
                 >
                   <span>Read pathway</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
                 <Link
                   to={`/appointment?service=${svc.slug}`}
-                  className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-[#163C3B] border border-[#163C3B]/20 hover:bg-[#C7D4C1]/40"
+                  className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-[#0B0A0D] border border-[#0B0A0D]/20 hover:bg-[#FBE3EC]/40"
                 >
                   Schedule
                 </Link>
@@ -145,7 +145,7 @@ export function ServicesOverviewPage() {
       </section>
 
       {/* Helpful Guidance Callout */}
-      <div className="rounded-3xl bg-[#163C3B] text-white p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="rounded-3xl bg-[#0B0A0D] text-white p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="space-y-2 max-w-xl">
           <h3 className="font-serif text-2xl font-bold">Unsure which service suits you best?</h3>
           <p className="text-xs sm:text-sm text-neutral-300">
@@ -154,7 +154,7 @@ export function ServicesOverviewPage() {
         </div>
         <Link
           to="/appointment?psychologist=help-me-choose"
-          className="px-6 py-3 rounded-full text-xs font-semibold bg-[#F8F5EF] text-[#163C3B] hover:bg-white transition-colors shrink-0"
+          className="px-6 py-3 rounded-full text-xs font-semibold bg-[#FFF9FC] text-[#0B0A0D] hover:bg-white transition-colors shrink-0"
         >
           Help Me Choose a Service
         </Link>

@@ -9,7 +9,7 @@ export function FamilyTherapyPage() {
     <ServiceDetailLayout
       service={service}
       customIntro={
-        <div className="rounded-2xl bg-[#D9D1E7]/30 border border-[#163C3B]/10 p-6 text-xs sm:text-sm text-[#163C3B] leading-relaxed">
+        <div className="rounded-2xl bg-[#D9D1E7]/30 border border-[#0B0A0D]/10 p-6 text-xs sm:text-sm text-[#0B0A0D] leading-relaxed">
           <strong>Systemic Family Approach:</strong> When one family member experiences distress, the ripples affect the entire household. Our family sessions provide a safe arena to voice intergenerational differences, reset collective boundaries, and develop shared rituals of affection and mutual accountability.
         </div>
       }
