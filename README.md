@@ -1,11 +1,41 @@
-<div align="center">
+# Open Door Psychology & Wellness
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+> “Don’t Cry. Just Come.”  
+> “You don’t have to carry it all alone.”
 
-  <h1>Built with AI Studio</h2>
+A luxury, compassionate psychology practice website built with React, TypeScript, Tailwind CSS, Lucide icons, and modern interactive wellness tools.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+---
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Automatic Deployment to GitHub Pages
 
-</div>
+This project is configured with a automated GitHub Actions workflow (`.github/workflows/deploy.yml`). Whenever you push code to `main` or `master`, GitHub Actions will automatically install dependencies, build the production site, and publish it to GitHub Pages.
+
+### One-Time Setup in Your GitHub Repository:
+
+1. Open your repository on [GitHub.com](https://github.com).
+2. Go to **Settings** (tab at top of your repo).
+3. In the left sidebar, click **Pages** (under the "Code and automation" section).
+4. Under **Build and deployment** > **Source**:
+   - Change from **"Deploy from a branch"** to **"GitHub Actions"**.
+5. That's it! Every future push will trigger the automated deployment workflow and publish your site at:
+   `https://<your-username>.github.io/<your-repo-name>/`
+
+---
+
+## Local Development & Building
+
+- Run development server:
+  ```bash
+  npm run dev
+  ```
+
+- Build production bundle:
+  ```bash
+  npm run build
+  ```
+
+- Preview production build:
+  ```bash
+  npm run preview
+  ```

@@ -1,0 +1,6 @@
+{
+  "name": "Open Door Psychology & Wellness",
+  "description": "A luxury, compassionate psychology practice website featuring an interactive intake sanctuary hub, comprehensive therapy services, psychologist directory, multi-step booking demo, and mental health journal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
