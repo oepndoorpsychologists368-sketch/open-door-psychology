@@ -51,7 +51,7 @@ export default function App() {
   return (
     <HashRouter>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen bg-[#F8F5EF] text-[#252927]">
+      <div className="flex flex-col min-h-screen bg-[#FFF9FC] text-[#0B0A0D]">
         <Navbar />
         <main className="flex-1">
           <Routes>

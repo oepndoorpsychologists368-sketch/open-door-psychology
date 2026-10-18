@@ -4,32 +4,44 @@
   --font-serif: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-  --color-forest-teal: #163C3B;
-  --color-forest-dark: #0F2A29;
-  --color-forest-light: #205453;
-  --color-warm-ivory: #F8F5EF;
-  --color-warm-cream: #F2EFE8;
-  --color-soft-sage: #C7D4C1;
-  --color-sage-light: #E3EBE0;
-  --color-clay-rose: #D8A69C;
-  --color-clay-light: #F4DFDB;
-  --color-dusty-lavender: #D9D1E7;
-  --color-lavender-light: #EDE8F5;
-  --color-charcoal: #252927;
-  --color-charcoal-muted: #565C58;
+  /* Pookie Luxury Black, White & Soft Pink Palette */
+  --color-jet-black: #0B0A0D;
+  --color-deep-charcoal: #151218;
+  --color-soft-white: #FFF9FC;
+  --color-pure-white: #FFFFFF;
+  --color-blush-pink: #F6C5D7;
+  --color-baby-pink: #FBE3EC;
+  --color-rose-pink: #EFA0BF;
+  --color-dusty-rose: #C87596;
+  --color-muted-grey: #BEB7C0;
+
+  /* Backward-compatible alias tokens for existing components */
+  --color-forest-teal: #0B0A0D;
+  --color-forest-dark: #151218;
+  --color-forest-light: #25202B;
+  --color-warm-ivory: #FFF9FC;
+  --color-warm-cream: #FBE3EC;
+  --color-soft-sage: #F6C5D7;
+  --color-sage-light: #FBE3EC;
+  --color-clay-rose: #EFA0BF;
+  --color-clay-light: #FBE3EC;
+  --color-dusty-lavender: #EFA0BF;
+  --color-lavender-light: #FBE3EC;
+  --color-charcoal: #0B0A0D;
+  --color-charcoal-muted: #5A5460;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: #F8F5EF;
-    color: #252927;
+    background-color: #FFF9FC;
+    color: #0B0A0D;
   }
 
   body {
     font-family: var(--font-sans);
-    background-color: #F8F5EF;
-    color: #252927;
+    background-color: #FFF9FC;
+    color: #0B0A0D;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -43,44 +55,58 @@
   }
 
   ::selection {
-    background-color: #D8A69C;
-    color: #163C3B;
+    background-color: #F6C5D7;
+    color: #0B0A0D;
   }
 }
 
-/* Boutique Luxury Editorial Styling */
-.glass-sanctuary {
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  border: 1px solid rgba(22, 60, 59, 0.08);
-  box-shadow: 0 10px 30px rgba(22, 60, 59, 0.04), 0 1px 3px rgba(22, 60, 59, 0.02);
+/* Pookie Luxury Editorial Glass & Card Styling */
+.glass-pookie {
+  background: rgba(255, 249, 252, 0.88);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(246, 197, 215, 0.45);
+  box-shadow: 0 10px 30px rgba(246, 197, 215, 0.15), 0 1px 3px rgba(11, 10, 13, 0.03);
 }
 
-.glass-teal {
-  background: rgba(22, 60, 59, 0.92);
-  backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
-  border: 1px solid rgba(248, 245, 239, 0.12);
-  color: #F8F5EF;
-  box-shadow: 0 20px 50px rgba(15, 42, 41, 0.35);
+.glass-noir {
+  background: rgba(21, 18, 24, 0.88);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(246, 197, 215, 0.18);
+  color: #FFF9FC;
+  box-shadow: 0 20px 50px rgba(11, 10, 13, 0.55), 0 0 35px rgba(239, 160, 191, 0.08);
 }
 
-.card-luxury {
+.card-pookie {
   background: #FFFFFF;
-  border: 1px solid rgba(22, 60, 59, 0.08);
+  border: 1px solid #FBE3EC;
   border-radius: 1.5rem;
-  box-shadow: 0 8px 30px rgba(22, 60, 59, 0.04);
+  box-shadow: 0 8px 30px rgba(246, 197, 215, 0.12);
   transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card-luxury:hover {
+.card-pookie:hover {
   transform: translateY(-3px);
-  border-color: rgba(216, 166, 156, 0.4);
-  box-shadow: 0 16px 40px rgba(22, 60, 59, 0.08), 0 0 20px rgba(216, 166, 156, 0.15);
+  border-color: #EFA0BF;
+  box-shadow: 0 16px 40px rgba(246, 197, 215, 0.28), 0 0 24px rgba(246, 197, 215, 0.25);
 }
 
-.pill-luxury {
+.card-noir {
+  background: #151218;
+  border: 1px solid rgba(246, 197, 215, 0.15);
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 36px rgba(11, 10, 13, 0.4);
+  transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-noir:hover {
+  transform: translateY(-3px);
+  border-color: rgba(239, 160, 191, 0.4);
+  box-shadow: 0 20px 50px rgba(11, 10, 13, 0.6), 0 0 30px rgba(239, 160, 191, 0.18);
+}
+
+.pill-pookie {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -90,35 +116,35 @@
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  background: rgba(199, 212, 193, 0.35);
-  color: #163C3B;
-  border: 1px solid rgba(22, 60, 59, 0.1);
+  background: #FBE3EC;
+  color: #0B0A0D;
+  border: 1px solid #F6C5D7;
 }
 
-/* Custom Scrollbars */
+/* Custom Scrollbars in Soft Pink & Deep Charcoal */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F2EFE8;
+  background: #FFF9FC;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C7D4C1;
+  background: #F6C5D7;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #D8A69C;
+  background: #EFA0BF;
 }
 
-/* Subtle Breathing Animation */
+/* Gentle Breathing Animation */
 @keyframes breathingPulse {
   0%, 100% {
     transform: scale(1);
-    opacity: 0.85;
+    opacity: 0.88;
   }
   50% {
     transform: scale(1.04);
@@ -128,6 +154,20 @@
 
 .animate-breathe {
   animation: breathingPulse 6s ease-in-out infinite;
+}
+
+/* Glow Shimmer */
+@keyframes pookieGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(246, 197, 215, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(239, 160, 191, 0.55);
+  }
+}
+
+.animate-glow {
+  animation: pookieGlow 4s ease-in-out infinite;
 }
 
 /* Respect reduced motion */

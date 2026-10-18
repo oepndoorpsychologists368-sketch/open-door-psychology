@@ -10,64 +10,64 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#163C3B] text-[#F8F5EF] pt-16 pb-12 mt-24 border-t border-[#163C3B]/20">
+    <footer className="bg-[#0B0A0D] text-[#FFF9FC] pt-16 pb-12 mt-24 border-t border-[#F6C5D7]/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Emergency Crisis Notice Banner */}
-        <div className="mb-14 rounded-2xl bg-white/[0.06] border border-white/12 p-5 sm:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div className="mb-14 rounded-2xl bg-[#151218] border border-[#EFA0BF]/30 p-5 sm:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-[0_10px_30px_rgba(11,10,13,0.5)]">
           <div className="flex items-start gap-3.5">
-            <ShieldAlert className="w-5 h-5 text-[#D8A69C] shrink-0 mt-0.5" />
-            <div className="text-xs sm:text-sm text-[#F8F5EF]/95 leading-relaxed">
-              <span className="font-semibold text-[#D8A69C]">Immediate Crisis Notice: </span>
+            <ShieldAlert className="w-5 h-5 text-[#EFA0BF] shrink-0 mt-0.5" />
+            <div className="text-xs sm:text-sm text-[#FFF9FC]/95 leading-relaxed">
+              <span className="font-bold text-[#F6C5D7]">Immediate Crisis Notice: </span>
               <span>
-                If you or someone you care about is experiencing immediate psychological danger, suicidal thoughts, or severe distress, please dial or text <strong className="text-white underline">988</strong> (Suicide &amp; Crisis Lifeline) or proceed to the nearest emergency medical room.
+                If you or someone you care about is experiencing immediate psychological danger, suicidal thoughts, or severe distress, please dial or text <strong className="text-white underline decoration-[#EFA0BF]">988</strong> (Suicide &amp; Crisis Lifeline) or proceed to the nearest emergency medical room.
               </span>
             </div>
           </div>
           <Link
             to="/urgent-help"
-            className="px-4 py-2 rounded-xl text-xs font-semibold bg-[#D8A69C] text-[#163C3B] hover:bg-[#E8BCB3] transition-colors whitespace-nowrap shrink-0 shadow-xs"
+            className="px-4 py-2 rounded-full text-xs font-bold bg-[#F6C5D7] text-[#0B0A0D] hover:bg-[#EFA0BF] transition-all whitespace-nowrap shrink-0 shadow-[0_2px_10px_rgba(246,197,215,0.3)]"
           >
             Emergency Resources
           </Link>
         </div>
 
         {/* Main 4-Column Directory Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#F6C5D7]/15">
           {/* Column 1: Brand & Tagline */}
           <div className="lg:col-span-2 space-y-4">
-            <Link to="/" className="inline-flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-white/[0.12] border border-white/20 text-[#D8A69C] flex items-center justify-center font-serif font-bold text-lg">
+            <Link to="/" className="inline-flex items-center gap-3 group">
+              <div className="w-9 h-9 rounded-xl bg-[#151218] border border-[#F6C5D7]/40 text-[#F6C5D7] flex items-center justify-center font-serif font-bold text-lg group-hover:scale-105 transition-all">
                 OD
               </div>
-              <span className="font-serif text-2xl font-bold tracking-tight text-[#F8F5EF]">
+              <span className="font-serif text-2xl font-bold tracking-tight text-[#FFF9FC] group-hover:text-[#F6C5D7] transition-colors">
                 {BRAND_CONFIG.name}
               </span>
             </Link>
 
             <div className="space-y-1">
-              <p className="font-serif text-xl italic text-[#D8A69C]">
+              <p className="font-serif text-xl italic text-[#F6C5D7]">
                 “{BRAND_CONFIG.primaryTagline}”
               </p>
-              <p className="text-xs text-[#C7D4C1] font-medium tracking-wide">
+              <p className="text-xs text-[#BEB7C0] font-medium tracking-wide">
                 “{BRAND_CONFIG.supportingTagline}”
               </p>
             </div>
 
-            <p className="text-xs text-[#F8F5EF]/75 max-w-sm leading-relaxed">
+            <p className="text-xs text-[#BEB7C0] max-w-sm leading-relaxed">
               {BRAND_CONFIG.leadParagraph}
             </p>
 
-            <div className="pt-2 text-xs text-[#F8F5EF]/70 space-y-2">
+            <div className="pt-2 text-xs text-[#BEB7C0] space-y-2">
               <div className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#D8A69C]" />
+                <MapPin className="w-3.5 h-3.5 text-[#EFA0BF]" />
                 <span>{BRAND_CONFIG.contact.addressLine1}, {BRAND_CONFIG.contact.cityRegion}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#D8A69C]" />
+                <Phone className="w-3.5 h-3.5 text-[#EFA0BF]" />
                 <span>{BRAND_CONFIG.contact.phoneDemo}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Clock className="w-3.5 h-3.5 text-[#D8A69C]" />
+                <Clock className="w-3.5 h-3.5 text-[#EFA0BF]" />
                 <span>{BRAND_CONFIG.contact.hoursWeekdays}</span>
               </div>
             </div>
@@ -75,33 +75,27 @@ export function Footer() {
 
           {/* Column 2: Clinical Services */}
           <div className="space-y-3">
-            <div className="text-xs font-semibold uppercase tracking-wider text-[#C7D4C1] font-sans">
+            <div className="text-xs font-bold uppercase tracking-wider text-[#F6C5D7] font-sans">
               Therapy Services
             </div>
-            <ul className="space-y-2 text-xs text-[#F8F5EF]/80">
+            <ul className="space-y-2 text-xs text-[#BEB7C0]">
+              {SERVICES_LIST.slice(0, 4).map((s) => (
+                <li key={s.slug}>
+                  <Link
+                    to={`/services/${s.slug}`}
+                    className="hover:text-[#F6C5D7] transition-colors block py-0.5"
+                  >
+                    {s.title}
+                  </Link>
+                </li>
+              ))}
               <li>
-                <Link to="/services/individual-therapy" className="hover:text-[#D8A69C] transition-colors">
-                  Individual Therapy
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/couples-therapy" className="hover:text-[#D8A69C] transition-colors">
-                  Couples &amp; Relationship Therapy
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/family-therapy" className="hover:text-[#D8A69C] transition-colors">
-                  Family Systems Support
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/child-teen-therapy" className="hover:text-[#D8A69C] transition-colors">
-                  Child &amp; Adolescent Care
-                </Link>
-              </li>
-              <li className="pt-1">
-                <Link to="/services" className="text-[#D8A69C] hover:underline font-medium">
-                  View All Modalities &rarr;
+                <Link
+                  to="/services"
+                  className="text-[#EFA0BF] font-semibold hover:underline flex items-center gap-1 pt-1"
+                >
+                  <span>View All Services</span>
+                  <span>→</span>
                 </Link>
               </li>
             </ul>
@@ -109,86 +103,81 @@ export function Footer() {
 
           {/* Column 3: Specialized Support Areas */}
           <div className="space-y-3">
-            <div className="text-xs font-semibold uppercase tracking-wider text-[#C7D4C1] font-sans">
+            <div className="text-xs font-bold uppercase tracking-wider text-[#F6C5D7] font-sans">
               Specialized Care
             </div>
-            <ul className="space-y-2 text-xs text-[#F8F5EF]/80">
+            <ul className="space-y-2 text-xs text-[#BEB7C0]">
               <li>
-                <Link to="/support/anxiety-stress" className="hover:text-[#D8A69C] transition-colors">
-                  Anxiety, Panic &amp; Burnout
+                <Link to="/support/anxiety-stress" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Anxiety &amp; Panic Relief
                 </Link>
               </li>
               <li>
-                <Link to="/support/depression" className="hover:text-[#D8A69C] transition-colors">
-                  Depression &amp; Quiet Heaviness
+                <Link to="/support/depression" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Depression &amp; Burnout
                 </Link>
               </li>
               <li>
-                <Link to="/support/trauma" className="hover:text-[#D8A69C] transition-colors">
-                  Complex Trauma &amp; Somatic Safety
+                <Link to="/support/trauma" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Trauma &amp; Somatic Recovery
                 </Link>
               </li>
               <li>
-                <Link to="/approach" className="hover:text-[#D8A69C] transition-colors">
-                  Non-Directive Approach
+                <Link to="/psychologists" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Meet Our Clinicians
                 </Link>
               </li>
               <li>
-                <Link to="/psychologists" className="hover:text-[#D8A69C] transition-colors">
-                  Meet Our Psychologists
+                <Link to="/fees" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Fees &amp; Superbill Estimator
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Frequently Asked Questions
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Client Resources & Legal */}
+          {/* Column 4: Sanctuary & Policies */}
           <div className="space-y-3">
-            <div className="text-xs font-semibold uppercase tracking-wider text-[#C7D4C1] font-sans">
-              Client Information
+            <div className="text-xs font-bold uppercase tracking-wider text-[#F6C5D7] font-sans">
+              Sanctuary &amp; Legal
             </div>
-            <ul className="space-y-2 text-xs text-[#F8F5EF]/80">
+            <ul className="space-y-2 text-xs text-[#BEB7C0]">
               <li>
-                <Link to="/appointment" className="hover:text-[#D8A69C] transition-colors font-semibold text-white">
-                  Request an Appointment
+                <Link to="/about" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  About Open Door
                 </Link>
               </li>
               <li>
-                <Link to="/fees" className="hover:text-[#D8A69C] transition-colors">
-                  Fees, Insurance &amp; Superbills
+                <Link to="/approach" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Our Non-Directive Approach
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-[#D8A69C] transition-colors">
-                  Frequently Asked Questions
+                <Link to="/journal" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  The Sanctuary Journal
                 </Link>
               </li>
               <li>
-                <Link to="/journal" className="hover:text-[#D8A69C] transition-colors">
-                  The Open Door Journal
+                <Link to="/contact" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Location &amp; Inquiries
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#D8A69C] transition-colors">
-                  Studio Location &amp; Directions
+                <Link to="/privacy" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Privacy Policy &amp; Confidentiality
                 </Link>
               </li>
               <li>
-                <Link to="/urgent-help" className="hover:text-[#D8A69C] transition-colors text-rose-300">
-                  Crisis Hotlines (988)
+                <Link to="/terms" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
+                  Terms of Care
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="hover:text-[#D8A69C] transition-colors">
-                  Privacy Policy &amp; HIPAA
-                </Link>
-              </li>
-              <li>
-                <Link to="/terms" className="hover:text-[#D8A69C] transition-colors">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link to="/accessibility" className="hover:text-[#D8A69C] transition-colors">
+                <Link to="/accessibility" className="hover:text-[#F6C5D7] transition-colors block py-0.5">
                   Accessibility Commitment
                 </Link>
               </li>
@@ -196,24 +185,25 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar with Demonstration Notice and Back to Top */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#F8F5EF]/60">
-          <div className="text-center md:text-left space-y-1">
-            <p>
-              &copy; {new Date().getFullYear()} {BRAND_CONFIG.name}. All rights reserved.
-            </p>
-            <p className="text-[11px] text-[#C7D4C1]/80 max-w-2xl">
+        {/* Bottom Disclaimer & Copyright */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#BEB7C0]">
+          <div className="space-y-2 text-center md:text-left">
+            <p className="text-[11px] text-[#BEB7C0]/80 max-w-2xl">
               {BRAND_CONFIG.disclaimers.demoNotice}
+            </p>
+            <p className="text-[11px] text-[#BEB7C0]/60">
+              © {new Date().getFullYear()} {BRAND_CONFIG.name}. All rights reserved. Licensed Clinical Psychology Sanctuary.
             </p>
           </div>
 
+          {/* Back to top button */}
           <button
-            type="button"
             onClick={scrollToTop}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.08] hover:bg-white/[0.14] text-[#F8F5EF] text-xs transition-colors cursor-pointer shrink-0"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#151218] border border-[#F6C5D7]/30 text-xs font-semibold text-[#F6C5D7] hover:bg-[#F6C5D7] hover:text-[#0B0A0D] transition-all cursor-pointer shadow-xs"
+            aria-label="Back to top"
           >
             <span>Back to top</span>
-            <ArrowUp className="w-3.5 h-3.5 text-[#D8A69C]" />
+            <ArrowUp className="w-3.5 h-3.5" />
           </button>
         </div>
       </div>

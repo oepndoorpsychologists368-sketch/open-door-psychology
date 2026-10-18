@@ -166,19 +166,19 @@ export function HeroCarePortal() {
   };
 
   return (
-    <div className="w-full rounded-3xl bg-white border border-[#163C3B]/10 shadow-[0_12px_44px_rgba(22,60,59,0.06)] overflow-hidden flex flex-col justify-between">
+    <div className="w-full rounded-3xl bg-[#151218] border border-[#F6C5D7]/25 shadow-[0_16px_50px_rgba(11,10,13,0.7)] overflow-hidden flex flex-col justify-between text-[#FFF9FC]">
       {/* Top Header & Interactive Tabs */}
-      <div className="p-5 sm:p-6 pb-0 border-b border-[#163C3B]/10 bg-[#F8F5EF]/60">
+      <div className="p-5 sm:p-6 pb-0 border-b border-[#F6C5D7]/15 bg-[#0B0A0D]/90">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#163C3B]">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#EFA0BF] animate-pulse" />
+            <span className="text-xs font-bold uppercase tracking-wider text-[#F6C5D7]">
               Intake Sanctuary Hub
             </span>
           </div>
 
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#163C3B]/5 border border-[#163C3B]/10 text-[11px] font-medium text-[#163C3B]">
-            <ShieldCheck className="w-3.5 h-3.5 text-[#D8A69C]" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FBE3EC]/10 border border-[#F6C5D7]/25 text-[11px] font-semibold text-[#F6C5D7]">
+            <ShieldCheck className="w-3.5 h-3.5 text-[#EFA0BF]" />
             <span>Accepting New Clients This Week</span>
           </div>
         </div>
@@ -191,13 +191,13 @@ export function HeroCarePortal() {
               setActiveTab('openings');
               setIsBreathingActive(false);
             }}
-            className={`px-3.5 py-2.5 text-xs font-semibold rounded-t-xl transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 border-t border-x ${
+            className={`px-3.5 py-2.5 text-xs font-bold rounded-t-xl transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 border-t border-x ${
               activeTab === 'openings'
-                ? 'bg-white text-[#163C3B] border-[#163C3B]/10 shadow-xs -mb-px z-10'
-                : 'text-neutral-500 hover:text-[#163C3B] border-transparent hover:bg-white/50'
+                ? 'bg-[#151218] text-[#F6C5D7] border-[#F6C5D7]/30 shadow-xs -mb-px z-10'
+                : 'text-[#BEB7C0] hover:text-[#FFF9FC] border-transparent hover:bg-white/5'
             }`}
           >
-            <Calendar className="w-3.5 h-3.5 text-[#D8A69C]" />
+            <Calendar className="w-3.5 h-3.5 text-[#EFA0BF]" />
             <span>Next Openings</span>
           </button>
 
@@ -207,13 +207,13 @@ export function HeroCarePortal() {
               setActiveTab('navigator');
               setIsBreathingActive(false);
             }}
-            className={`px-3.5 py-2.5 text-xs font-semibold rounded-t-xl transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 border-t border-x ${
+            className={`px-3.5 py-2.5 text-xs font-bold rounded-t-xl transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 border-t border-x ${
               activeTab === 'navigator'
-                ? 'bg-white text-[#163C3B] border-[#163C3B]/10 shadow-xs -mb-px z-10'
-                : 'text-neutral-500 hover:text-[#163C3B] border-transparent hover:bg-white/50'
+                ? 'bg-[#151218] text-[#F6C5D7] border-[#F6C5D7]/30 shadow-xs -mb-px z-10'
+                : 'text-[#BEB7C0] hover:text-[#FFF9FC] border-transparent hover:bg-white/5'
             }`}
           >
-            <Compass className="w-3.5 h-3.5 text-[#163C3B]" />
+            <Compass className="w-3.5 h-3.5 text-[#EFA0BF]" />
             <span>Find What Fits</span>
           </button>
 
@@ -223,13 +223,13 @@ export function HeroCarePortal() {
               setActiveTab('grounding');
               setIsBreathingActive(true);
             }}
-            className={`px-3.5 py-2.5 text-xs font-semibold rounded-t-xl transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 border-t border-x ${
+            className={`px-3.5 py-2.5 text-xs font-bold rounded-t-xl transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 border-t border-x ${
               activeTab === 'grounding'
-                ? 'bg-white text-[#163C3B] border-[#163C3B]/10 shadow-xs -mb-px z-10'
-                : 'text-neutral-500 hover:text-[#163C3B] border-transparent hover:bg-white/50'
+                ? 'bg-[#151218] text-[#F6C5D7] border-[#F6C5D7]/30 shadow-xs -mb-px z-10'
+                : 'text-[#BEB7C0] hover:text-[#FFF9FC] border-transparent hover:bg-white/5'
             }`}
           >
-            <Wind className="w-3.5 h-3.5 text-[#D8A69C]" />
+            <Wind className="w-3.5 h-3.5 text-[#EFA0BF]" />
             <span>Somatic Pause</span>
           </button>
         </div>
@@ -239,17 +239,17 @@ export function HeroCarePortal() {
       {activeTab === 'openings' && (
         <div className="p-5 sm:p-6 space-y-4">
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs text-neutral-500 font-medium">
+            <span className="text-xs text-[#BEB7C0] font-medium">
               Consultation availability (In-Person &amp; Telehealth):
             </span>
 
             {/* Filter Buttons */}
-            <div className="flex items-center gap-1 bg-[#F8F5EF] p-1 rounded-lg border border-[#163C3B]/10 text-[11px]">
+            <div className="flex items-center gap-1 bg-[#0B0A0D] p-1 rounded-full border border-[#F6C5D7]/25 text-[11px]">
               <button
                 type="button"
                 onClick={() => setOpeningFormat('all')}
-                className={`px-2 py-0.5 rounded cursor-pointer transition-colors ${
-                  openingFormat === 'all' ? 'bg-[#163C3B] text-white font-medium' : 'text-neutral-600'
+                className={`px-2.5 py-0.5 rounded-full cursor-pointer transition-colors ${
+                  openingFormat === 'all' ? 'bg-[#F6C5D7] text-[#0B0A0D] font-bold' : 'text-[#BEB7C0]'
                 }`}
               >
                 All
@@ -257,8 +257,8 @@ export function HeroCarePortal() {
               <button
                 type="button"
                 onClick={() => setOpeningFormat('in-person')}
-                className={`px-2 py-0.5 rounded cursor-pointer transition-colors ${
-                  openingFormat === 'in-person' ? 'bg-[#163C3B] text-white font-medium' : 'text-neutral-600'
+                className={`px-2.5 py-0.5 rounded-full cursor-pointer transition-colors ${
+                  openingFormat === 'in-person' ? 'bg-[#F6C5D7] text-[#0B0A0D] font-bold' : 'text-[#BEB7C0]'
                 }`}
               >
                 In-Person
@@ -266,8 +266,8 @@ export function HeroCarePortal() {
               <button
                 type="button"
                 onClick={() => setOpeningFormat('telehealth')}
-                className={`px-2 py-0.5 rounded cursor-pointer transition-colors ${
-                  openingFormat === 'telehealth' ? 'bg-[#163C3B] text-white font-medium' : 'text-neutral-600'
+                className={`px-2.5 py-0.5 rounded-full cursor-pointer transition-colors ${
+                  openingFormat === 'telehealth' ? 'bg-[#F6C5D7] text-[#0B0A0D] font-bold' : 'text-[#BEB7C0]'
                 }`}
               >
                 Virtual
@@ -282,208 +282,201 @@ export function HeroCarePortal() {
               return (
                 <div
                   key={idx}
-                  className="rounded-2xl p-3.5 sm:p-4 bg-[#F8F5EF] hover:bg-[#F2EFE8] border border-[#163C3B]/10 hover:border-[#D8A69C] transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group"
+                  className="rounded-2xl p-3.5 sm:p-4 bg-[#0B0A0D]/70 hover:bg-[#0B0A0D] border border-[#F6C5D7]/15 hover:border-[#EFA0BF]/50 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group"
                 >
                   <div className="flex items-center gap-3">
                     <img
                       src={psychologistAvatars[opening.psychologistSlug] || psychologistAvatars['dr-elena-vance']}
                       alt={clinician?.name || 'Psychologist'}
-                      className="w-12 h-12 rounded-xl object-cover shrink-0 border border-[#163C3B]/10"
+                      className="w-12 h-12 rounded-xl object-cover shrink-0 border border-[#F6C5D7]/30"
                     />
                     <div className="space-y-0.5">
                       <div className="flex items-center gap-2">
-                        <span className="font-serif font-bold text-sm text-[#163C3B]">
+                        <span className="font-serif font-bold text-sm text-[#FFF9FC]">
                           {clinician?.name}
                         </span>
-                        <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+                        <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-[#FBE3EC]/20 text-[#F6C5D7] border border-[#F6C5D7]/30">
                           {opening.dayText}
                         </span>
                       </div>
-                      <div className="text-xs text-neutral-500 flex items-center gap-2">
-                        <span className="font-mono text-[11px] text-[#163C3B] font-semibold">
-                          {opening.timeSlot}
-                        </span>
-                        <span aria-hidden="true" className="text-neutral-300">·</span>
-                        <span className="flex items-center gap-1">
-                          {opening.format === 'in-person' ? (
-                            <MapPin className="w-3 h-3 text-[#D8A69C]" />
-                          ) : (
-                            <Video className="w-3 h-3 text-[#3B82F6]" />
-                          )}
-                          <span>{opening.locationBadge}</span>
-                        </span>
+                      <div className="text-xs text-[#BEB7C0]">
+                        {opening.timeSlot}
+                      </div>
+                      <div className="text-[11px] text-[#C87596] flex items-center gap-1 font-medium">
+                        {opening.format === 'in-person' ? (
+                          <MapPin className="w-3 h-3 text-[#EFA0BF]" />
+                        ) : (
+                          <Video className="w-3 h-3 text-[#EFA0BF]" />
+                        )}
+                        <span>{opening.locationBadge}</span>
                       </div>
                     </div>
                   </div>
 
                   <Link
-                    to={`/appointment?service=${opening.serviceSlug}&psychologist=${opening.psychologistSlug}`}
-                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-[#163C3B] text-[#F8F5EF] group-hover:bg-[#1D4E4D] transition-colors whitespace-nowrap shadow-2xs self-end sm:self-center"
+                    to={`/appointment?clinician=${opening.psychologistSlug}`}
+                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold text-[#0B0A0D] bg-[#F6C5D7] hover:bg-[#EFA0BF] shadow-xs transition-all whitespace-nowrap self-end sm:self-center"
                   >
-                    <span>Reserve Slot</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#D8A69C]" />
+                    <span>Claim Slot</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
               );
             })}
           </div>
 
-          <div className="pt-1 flex items-center justify-between text-xs text-neutral-500">
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-              <span>No referral needed · Confidential scheduling</span>
-            </span>
-            <Link to="/appointment" className="text-[#163C3B] font-semibold hover:underline">
-              View All Openings &rarr;
+          <div className="pt-2 flex items-center justify-between text-xs text-[#BEB7C0]">
+            <span>Need a custom appointment time?</span>
+            <Link
+              to="/appointment"
+              className="font-bold text-[#F6C5D7] hover:text-[#EFA0BF] hover:underline"
+            >
+              Browse Complete Calendar →
             </Link>
           </div>
         </div>
       )}
 
-      {/* Tab 2: Find What Fits */}
+      {/* Tab 2: Find What Fits (Interactive Match Navigator) */}
       {activeTab === 'navigator' && (
         <div className="p-5 sm:p-6 space-y-4">
-          <div className="space-y-1">
-            <h3 className="font-serif text-base font-bold text-[#163C3B]">
-              What season are you navigating?
-            </h3>
-            <p className="text-xs text-neutral-500">
-              Select what feels heaviest and we’ll show the direct clinical pathway.
-            </p>
+          <div className="text-xs text-[#BEB7C0]">
+            Select what you are carrying right now for tailored guidance:
           </div>
 
-          {/* Quick Select Buttons */}
+          {/* Focus Selector Pills */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {focusAreas.map((f) => (
               <button
                 key={f.id}
                 type="button"
                 onClick={() => setSelectedFocus(f.id)}
-                className={`p-2.5 rounded-xl text-left text-xs transition-all cursor-pointer border ${
+                className={`p-3 rounded-xl text-left text-xs font-semibold transition-all cursor-pointer border ${
                   selectedFocus === f.id
-                    ? 'bg-[#163C3B] text-[#F8F5EF] border-[#163C3B] shadow-xs'
-                    : 'bg-[#F8F5EF] hover:bg-[#F2EFE8] text-[#252927] border-[#163C3B]/10'
+                    ? 'bg-[#F6C5D7] text-[#0B0A0D] border-[#F6C5D7] shadow-[0_2px_12px_rgba(246,197,215,0.35)]'
+                    : 'bg-[#0B0A0D]/70 text-[#FFF9FC] border-[#F6C5D7]/15 hover:border-[#EFA0BF]/40'
                 }`}
               >
-                <div className="font-semibold">{f.label}</div>
+                <div className="flex items-center justify-between">
+                  <span>{f.label}</span>
+                  {selectedFocus === f.id && <CheckCircle2 className="w-3.5 h-3.5 text-[#0B0A0D]" />}
+                </div>
               </button>
             ))}
           </div>
 
-          {/* Matched Outcome Box */}
-          <div className="rounded-2xl p-4 bg-[#F8F5EF] border border-[#163C3B]/10 space-y-3">
+          {/* Matched Recommended Care Card */}
+          <div className="p-4 rounded-2xl bg-[#0B0A0D] border border-[#F6C5D7]/20 space-y-3">
             <div className="flex items-start justify-between gap-3">
-              <div className="space-y-1">
-                <span className="text-[10px] font-semibold uppercase tracking-wider text-[#D8A69C]">
-                  Recommended Pathway
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#F6C5D7]">
+                  Recommended Care Pathway
                 </span>
-                <div className="font-serif font-bold text-base text-[#163C3B]">
+                <h4 className="font-serif text-base font-bold text-[#FFF9FC]">
                   {activeFocus.serviceTitle}
-                </div>
-                <p className="text-xs text-neutral-600 leading-relaxed">
-                  {activeFocus.note}
-                </p>
-              </div>
-
-              <img
-                src={psychologistAvatars[matchedClinician.slug]}
-                alt={matchedClinician.name}
-                className="w-12 h-12 rounded-xl object-cover shrink-0 border border-[#163C3B]/10"
-              />
-            </div>
-
-            <div className="pt-2 border-t border-[#163C3B]/10 flex items-center justify-between">
-              <div className="text-xs text-neutral-500">
-                Lead Specialist: <strong className="text-[#163C3B]">{matchedClinician.name.split(',')[0]}</strong>
+                </h4>
               </div>
               <Link
-                to={`/appointment?service=${activeFocus.serviceSlug}&psychologist=${matchedClinician.slug}`}
-                className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold bg-[#163C3B] text-white hover:bg-[#1D4E4D]"
+                to={`/services/${activeFocus.serviceSlug}`}
+                className="text-xs font-bold text-[#EFA0BF] hover:underline whitespace-nowrap"
               >
-                <span>Request Intake</span>
-                <ArrowRight className="w-3 h-3 text-[#D8A69C]" />
+                Learn More
+              </Link>
+            </div>
+
+            <p className="text-xs text-[#BEB7C0] leading-relaxed">
+              {activeFocus.note}
+            </p>
+
+            {/* Matched Clinician Preview */}
+            <div className="pt-2 border-t border-white/10 flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <img
+                  src={psychologistAvatars[matchedClinician.slug] || psychologistAvatars['dr-elena-vance']}
+                  alt={matchedClinician.name}
+                  className="w-9 h-9 rounded-full object-cover border border-[#F6C5D7]/30"
+                />
+                <div className="text-xs">
+                  <div className="font-bold text-[#FFF9FC]">{matchedClinician.name}</div>
+                  <div className="text-[#C87596] text-[11px]">{matchedClinician.title}</div>
+                </div>
+              </div>
+
+              <Link
+                to={`/appointment?clinician=${matchedClinician.slug}&service=${activeFocus.serviceSlug}`}
+                className="px-3.5 py-1.5 rounded-full text-xs font-bold text-[#0B0A0D] bg-[#F6C5D7] hover:bg-[#EFA0BF] transition-all"
+              >
+                Request Match
               </Link>
             </div>
           </div>
         </div>
       )}
 
-      {/* Tab 3: Somatic Grounding */}
+      {/* Tab 3: Somatic Pause (Interactive Grounding & Calming Sound) */}
       {activeTab === 'grounding' && (
-        <div className="p-5 sm:p-6 text-center space-y-4">
-          <div className="flex items-center justify-between text-xs text-neutral-500">
-            <span className="font-medium text-[#163C3B]">4-7-8 Parasympathetic Reset</span>
-            <button
-              type="button"
-              onClick={toggleSound}
-              className="flex items-center gap-1 text-[11px] font-semibold text-[#163C3B] hover:text-[#D8A69C] transition-colors cursor-pointer"
-            >
-              {isAudioOn ? (
-                <>
-                  <Volume2 className="w-3.5 h-3.5 text-[#D8A69C]" />
-                  <span>432Hz Sound On</span>
-                </>
-              ) : (
-                <>
-                  <VolumeX className="w-3.5 h-3.5 text-neutral-400" />
-                  <span>Enable Drone Tone</span>
-                </>
-              )}
-            </button>
+        <div className="p-5 sm:p-6 space-y-5 text-center">
+          <div className="space-y-1">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-[#F6C5D7]">
+              Biological 4-7-8 Parasympathetic Reset
+            </span>
+            <h4 className="font-serif text-lg font-bold text-[#FFF9FC]">
+              Take 60 seconds before deciding.
+            </h4>
+            <p className="text-xs text-[#BEB7C0] max-w-sm mx-auto">
+              Follow the expanding circle. Inhale peace, hold gentle safety, exhale exhaustion.
+            </p>
           </div>
 
-          {/* Calming Breath Circle */}
-          <div className="relative w-36 h-36 mx-auto flex items-center justify-center my-2">
+          {/* Interactive Breathing Visualizer */}
+          <div className="py-4 flex flex-col items-center justify-center">
             <div
-              className={`absolute inset-0 rounded-full bg-gradient-to-tr from-[#C7D4C1]/40 via-[#D8A69C]/30 to-[#D9D1E7]/40 blur-xl transition-transform duration-1000 ${
+              className={`w-36 h-36 rounded-full flex flex-col items-center justify-center transition-all duration-1000 shadow-xl border-2 ${
                 breathPhase === 'Inhale'
-                  ? 'scale-125 opacity-80'
+                  ? 'scale-110 bg-[#F6C5D7]/20 border-[#F6C5D7] shadow-[0_0_35px_rgba(246,197,215,0.45)]'
                   : breathPhase === 'Hold'
-                  ? 'scale-125 opacity-60'
-                  : 'scale-90 opacity-30'
-              }`}
-            />
-            <div
-              className={`relative w-28 h-28 rounded-full bg-white border border-[#163C3B]/15 shadow-md flex flex-col items-center justify-center transition-all duration-1000 ${
-                breathPhase === 'Inhale' ? 'scale-110' : breathPhase === 'Hold' ? 'scale-110' : 'scale-95'
+                  ? 'scale-110 bg-[#EFA0BF]/30 border-[#EFA0BF] shadow-[0_0_40px_rgba(239,160,191,0.55)]'
+                  : 'scale-90 bg-[#FBE3EC]/10 border-[#FBE3EC]/40 shadow-[0_0_20px_rgba(251,227,236,0.25)]'
               }`}
             >
-              <span className="font-serif text-lg font-bold text-[#163C3B]">{breathPhase}</span>
-              <span className="font-mono text-2xl font-light text-[#D8A69C]">{breathSeconds}s</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#F6C5D7]">
+                {breathPhase}
+              </span>
+              <span className="font-serif text-3xl font-bold text-[#FFF9FC]">
+                {breathSeconds}s
+              </span>
             </div>
           </div>
 
-          <div className="space-y-1">
-            <p className="text-xs text-neutral-600 font-medium">
-              {breathPhase === 'Inhale' && 'Slowly fill your lungs through your nose.'}
-              {breathPhase === 'Hold' && 'Rest quietly in fullness without strain.'}
-              {breathPhase === 'Exhale' && 'Gently release tension completely through parted lips.'}
-            </p>
-            <p className="text-[11px] text-neutral-400">
-              Take 60 seconds right now before taking your next step.
-            </p>
-          </div>
-
-          <div className="pt-2">
-            <Link
-              to="/appointment"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold bg-[#163C3B] text-[#F8F5EF] hover:bg-[#1D4E4D] shadow-2xs"
+          {/* Audio Synthesizer Control */}
+          <div className="flex items-center justify-center gap-3">
+            <button
+              type="button"
+              onClick={toggleSound}
+              className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold transition-all cursor-pointer border ${
+                isAudioOn
+                  ? 'bg-[#F6C5D7] text-[#0B0A0D] border-[#F6C5D7] shadow-[0_2px_12px_rgba(246,197,215,0.4)]'
+                  : 'bg-[#0B0A0D] text-[#FFF9FC] border-[#F6C5D7]/20 hover:border-[#F6C5D7]/50'
+              }`}
             >
-              <span>I’m Ready to Schedule</span>
-              <ArrowRight className="w-3.5 h-3.5 text-[#D8A69C]" />
-            </Link>
+              {isAudioOn ? <Volume2 className="w-3.5 h-3.5" /> : <VolumeX className="w-3.5 h-3.5" />}
+              <span>{isAudioOn ? 'Mute Tibetan Singing Bowl' : 'Play Calming Resonance'}</span>
+            </button>
           </div>
         </div>
       )}
 
-      {/* Persistent Bottom Sanctuary Guarantee Bar */}
-      <div className="px-5 sm:px-6 py-3.5 bg-[#F8F5EF] border-t border-[#163C3B]/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-neutral-600">
+      {/* Bottom Footer Callout */}
+      <div className="px-5 py-3.5 bg-[#0B0A0D] border-t border-[#F6C5D7]/15 flex items-center justify-between text-xs text-[#BEB7C0]">
         <div className="flex items-center gap-2">
-          <Heart className="w-3.5 h-3.5 text-[#D8A69C]" />
-          <span>“Don’t Cry. Just Come.” — Zero judgment, unrushed care.</span>
+          <Heart className="w-3.5 h-3.5 text-[#EFA0BF] fill-[#EFA0BF]" />
+          <span>No preparation or apology needed.</span>
         </div>
-        <Link to="/approach" className="font-semibold text-[#163C3B] hover:underline whitespace-nowrap">
-          Our Care Philosophy &rarr;
+        <Link
+          to="/appointment"
+          className="font-bold text-[#F6C5D7] hover:text-[#EFA0BF] hover:underline"
+        >
+          Book Consultation →
         </Link>
       </div>
     </div>
