@@ -13,10 +13,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      @keyframes sanctuaryPulse {
+        0%, 100% { transform: scale(1); opacity: 0.85; }
+        50% { transform: scale(1.08); opacity: 1; }
+      }
+      .sanctuary-pulse {
+        animation: sanctuaryPulse 2.8s ease-in-out infinite;
+      }
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+
+    <!-- Safe GitHub Pages fallback detector for uncompiled main-branch deployments -->
+    <script>
+      (function() {
+        var isGitHubPages = window.location.hostname.indexOf('github.io') !== -1;
+        var isNotDocs = window.location.pathname.indexOf('/docs') === -1;
+        
+        // If served statically from GitHub Pages root where uncompiled src/main.tsx cannot be run by browser
+        if (isGitHubPages && isNotDocs) {
+          window.__ghp_redirect_timer = setTimeout(function() {
+            var rootEl = document.getElementById('root');
+            // If React has not mounted (no main content yet)
+            if (rootEl && !rootEl.querySelector('nav')) {
+              var basePath = window.location.pathname.replace(/\/+$/, '');
+              window.location.replace(basePath + '/docs/' + window.location.search + window.location.hash);
+            }
+          }, 500);
+        }
+      })();
+    </script>
   </head>
   <body class="bg-[#F8F5EF] text-[#252927] antialiased selection:bg-[#D8A69C] selection:text-[#163C3B] min-h-screen">
-    <div id="root"></div>
+    <div id="root">
+      <!-- Luxury Pre-Mount Sanctuary Display (Immediately replaced as soon as React renders) -->
+      <div id="sanctuary-preloader" style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #F8F5EF; color: #163C3B; font-family: 'Manrope', system-ui, -apple-system, sans-serif; padding: 24px; text-align: center;">
+        <div style="max-width: 520px; display: flex; flex-direction: column; align-items: center;">
+          <div class="sanctuary-pulse" style="width: 56px; height: 56px; border-radius: 16px; background: #163C3B; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; box-shadow: 0 16px 32px rgba(22, 60, 59, 0.16);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F8F5EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 21V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17" />
+              <path d="M4 21h16" />
+              <path d="M6 4c0 0 8 3 8 11v6" />
+            </svg>
+          </div>
+          <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em; color: #D8A69C; font-weight: 700; margin-bottom: 8px;">Open Door Psychology &amp; Wellness</span>
+          <h1 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 32px; line-height: 1.2; margin: 0 0 10px; color: #163C3B; font-weight: 400;">Don't Cry. Just Come.</h1>
+          <p style="font-size: 14px; color: #606864; max-width: 380px; line-height: 1.6; margin: 0 0 24px;">
+            Preparing your quiet space. You don't have to carry it all alone.
+          </p>
+          <div style="width: 32px; height: 32px; border: 3px solid rgba(22, 60, 59, 0.14); border-top-color: #163C3B; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
